@@ -1,5 +1,4 @@
 const productCatalog = [
-    // ===== CATEGORY: PIPE FITTINGS (Source: Excel Metal, Panam, Tu-Lok) =====
     { id: 1, name: "SS 304L Buttweld 90° Elbow", category: "pipe-fittings", emoji: "📐", description: "Seamless long radius elbow for industrial piping.", specs: "Standard: ASME B16.9; Sch 10-80; Size: 1/2\" to 24\"", price: "Inquire" },
     { id: 2, name: "SS 316L Buttweld Tee", category: "pipe-fittings", emoji: "⊤", description: "Equal and unequal tee junctions for fluid distribution.", specs: "ASTM A403 WP316L; Seamless/Welded; Sch 40/80", price: "Inquire" },
     { id: 3, name: "SS Concentric Reducer", category: "pipe-fittings", emoji: "⧓", description: "Symmetrical reducer for vertical piping transitions.", specs: "Size: 1/2\" x 1/4\" to 12\" x 10\"; Sch 10s to 80s", price: "Inquire" },
@@ -15,8 +14,6 @@ const productCatalog = [
     { id: 13, name: "Socket Weld Elbow 90°", category: "pipe-fittings", emoji: "📐", description: "High-pressure forged fitting for small bore piping.", specs: "Class: 3000/6000/9000; Standard: ASME B16.11", price: "Inquire" },
     { id: 14, name: "Socket Weld Full Coupling", category: "pipe-fittings", emoji: "🍱", description: "Connects two pipes of the same size using socket welds.", specs: "Material: ASTM A182 F304/316", price: "Inquire" },
     { id: 15, name: "Threaded Union (Class 3000)", category: "pipe-fittings", emoji: "💍", description: "Allows for easy disconnection of piping for maintenance.", specs: "Threads: NPT/BSPT; Standard: MSS SP-83", price: "Inquire" },
-
-    // ===== CATEGORY: PNEUMATIC FITTINGS (Source: P S Industrial, PP Enterprise, Tu-Lok) =====
     { id: 16, name: "One-Touch Straight Connector (PC)", category: "pneumatic-fittings", emoji: "🔌", description: "Instant connection for PU/Nylon tubing.", specs: "Tube OD: 4/6/8/10/12/16mm; Thread: M5 to 1/2\"", price: "Inquire" },
     { id: 17, name: "Push-In Elbow (PL)", category: "pneumatic-fittings", emoji: "∟", description: "90-degree instant pneumatic connection.", specs: "Body: PBT; Thread: Nickel Plated Brass; Press: 10 Bar", price: "Inquire" },
     { id: 18, name: "Push-In Tee (PB/PD)", category: "pneumatic-fittings", emoji: "⫪", description: "Branching connector for air lines.", specs: "Available: Branch Tee, Run Tee; Media: Air/Vacuum", price: "Inquire" },
@@ -32,8 +29,6 @@ const productCatalog = [
     { id: 28, name: "Rotary Joint", category: "pneumatic-fittings", emoji: "🌀", description: "Allows rotation between air supply and moving parts.", specs: "Speed: Up to 1000 RPM; Material: Stainless/Steel", price: "Inquire" },
     { id: 29, name: "Y-Type Push-In (PY)", category: "pneumatic-fittings", emoji: "ϒ", description: "Splits one air line into two in a Y pattern.", specs: "Material: PBT Composite; Release Ring: POM", price: "Inquire" },
     { id: 30, name: "Metal Air Blow Gun", category: "pneumatic-fittings", emoji: "🔫", description: "Industrial cleaning tool for dust removal.", specs: "Nozzle: 100mm/250mm; Material: Aluminum Body", price: "Inquire" },
-
-    // ===== CATEGORY: VALVES & REGULATORS (Source: Panam, P S Industrial) =====
     { id: 31, name: "2/2 Way Solenoid Valve (Brass)", category: "valves", emoji: "🎛️", description: "Normally closed valve for water/air/oil.", specs: "Coil: 230V AC; Orifice: 15mm-50mm; Seal: NBR/Viton", price: "Inquire" },
     { id: 32, name: "5/2 Way Single Solenoid Valve", category: "valves", emoji: "🕹️", description: "Pilot operated valve for cylinder control.", specs: "Brand: Airtac Type; Duty: 100%; Port: 1/4\" BSP", price: "Inquire" },
     { id: 33, name: "3/2 Way Hand Lever Valve", category: "valves", emoji: "🕹️", description: "Manual control valve for single acting cylinders.", specs: "Type: Detented/Spring Return; Port: 1/4\"", price: "Inquire" },
@@ -49,8 +44,6 @@ const productCatalog = [
     { id: 43, name: "Globe Valve (Flanged)", category: "valves", emoji: "🌍", description: "Throttling valve for precise flow adjustment.", specs: "Standard: DIN/ANSI; Material: WCB/SS316", price: "Inquire" },
     { id: 44, name: "Y-Strainer (SS316)", category: "valves", emoji: "𝒀", description: "Filters debris from the pipeline.", specs: "Mesh: 40-100; End: Screwed/Flanged", price: "Inquire" },
     { id: 45, name: "Float Valve (SS)", category: "valves", emoji: "🎈", description: "Automatic level control for water tanks.", specs: "Size: 1/2\" to 4\"; Material: SS304", price: "Inquire" },
-
-    // ===== CATEGORY: SHEETS & SEALING (Source: Jay Agenciez, Excel Metal) =====
     { id: 46, name: "Compressed Asbestos Sheet (CAF-120)", category: "sheets", emoji: "📋", description: "Standard grade sealing for steam and water.", specs: "Thickness: 1mm - 5mm; Sheet Size: 1.5m x 2m", price: "Inquire" },
     { id: 47, name: "Non-Asbestos Gasket Sheet", category: "sheets", emoji: "🌿", description: "Aramid fiber sheet for eco-safe sealing.", specs: "Brand: Champion/Spitmaan; Temp: Up to 350C", price: "Inquire" },
     { id: 48, name: "Spiral Wound Gasket (SS316)", category: "sheets", emoji: "🌀", description: "High-pressure gasket with outer/inner ring.", specs: "Filler: Graphite/PTFE; Class: 150 to 2500", price: "Inquire" },
@@ -61,16 +54,11 @@ const productCatalog = [
     { id: 53, name: "Silicon Spray (Mould Release)", category: "sheets", emoji: "🧴", description: "Industrial lubricant and release agent.", specs: "Volume: 450ml; Grade: Non-Toxic", price: "Inquire" },
     { id: 54, name: "Loctite 542 Thread Sealant", category: "sheets", emoji: "🧪", description: "Hydraulic thread sealant for fine threads.", specs: "Viscosity: Low; Color: Brown", price: "Inquire" },
     { id: 55, name: "Klingerit Gasket Sheet", category: "sheets", emoji: "📜", description: "Premium grade asbestos sheet for heavy oil.", specs: "Grade: Top-Sil; Standard: BS 2815", price: "Inquire" },
-
-    // ===== CATEGORY: TUBES & HOSES (Source: PP Ent, K P Sales) =====
     { id: 56, name: "Flexible SS Braid Hose", category: "tubes", emoji: "〰️", description: "Absorbs vibration and expansion in piping.", specs: "Material: SS304 Braiding; Core: Corrugated SS", price: "Inquire" },
     { id: 57, name: "PVC Steel Wire Reinforced Hose", category: "tubes", emoji: "🥤", description: "Transparent hose for suction and discharge.", specs: "Temp: -10 to 70C; Material: Food Grade PVC", price: "Inquire" },
     { id: 58, name: "Metal Coolant Pipe (Articulated)", category: "tubes", emoji: "🏗️", description: "Directs coolant flow in CNC machines.", specs: "Length: 300mm to 600mm; End: Magnetic Base opt", price: "Inquire" },
     { id: 59, name: "Hydraulic Hose (R2 Type)", category: "tubes", emoji: "🦾", description: "Double steel wire braid high-pressure hose.", specs: "Working Press: 400 Bar; Standard: EN 853", price: "Inquire" },
-    { id: 60, name: "Anti-Spatter Tube (Weld Grade)", category: "tubes", emoji: "🔥", description: "Pneumatic tube for welding environments.", specs: "Material: Polyurethane with outer cover", price: "Inquire" },
-
-// ===== CATEGORY: PIPE FITTINGS (Sub-variants & Materials) =====
-    { id: 61, name: "Carbon Steel A105 Forged Elbow", category: "pipe-fittings", emoji: "🏗️", description: "Heavy-duty forged fitting for high-pressure steam.", specs: "Class: 3000; Standard: ASME B16.11; Size: 1/4\" to 4\"", price: "Inquire" },
+    { id: 60, name: "Anti-Spatter Tube (Weld Grade)", category: "tubes", emoji: "🔥", description: "Pneumatic tube for welding environments.", specs: "Material: Polyurethane with outer cover", price: "Inquire" } // ===== CATEGORY: PIPE FITTINGS (Sub-variants & Materials) ===== { id: 61, name: "Carbon Steel A105 Forged Elbow", category: "pipe-fittings", emoji: "🏗️", description: "Heavy-duty forged fitting for high-pressure steam.", specs: "Class: 3000; Standard: ASME B16.11; Size: 1/4\" to 4\"", price: "Inquire" },
     { id: 62, name: "SS 316 Double Ferrule Equal Cross", category: "pipe-fittings", emoji: "✢", description: "Connects four tubes in a cross configuration.", specs: "Material: ASTM A276 SS316; Max Pressure: 6000 PSI", price: "Inquire" },
     { id: 63, name: "Monel 400 Tube Fittings", category: "pipe-fittings", emoji: "🧪", description: "Special alloy fittings for sea water and chemical use.", specs: "Corrosion Resistant; Custom Sizes Available", price: "Inquire" },
     { id: 64, name: "Inconel 625 Adapter", category: "pipe-fittings", emoji: "🔥", description: "High-nickel alloy for extreme temperature environments.", specs: "NPT Male to Tube; Extreme Pressure Rating", price: "Inquire" },
@@ -80,8 +68,6 @@ const productCatalog = [
     { id: 68, name: "SS 304 Seamless Pipe (Sch 40)", category: "pipe-fittings", emoji: "📊", description: "General purpose industrial piping.", specs: "ASTM A312; Length: 6 Meters; Size: 1/2\" to 12\"", price: "Inquire" },
     { id: 69, name: "Copper Tube (Soft Annealed)", category: "pipe-fittings", emoji: "🥉", description: "Flexible copper tubing for HVAC and air lines.", specs: "Grade: ASTM B280; Outer Diameter: 1/4\" to 7/8\"", price: "Inquire" },
     { id: 70, name: "Brass Hex Nipple", category: "pipe-fittings", emoji: "🟡", description: "Economical threaded connector for low pressure.", specs: "Material: Extruded Brass; Thread: BSP", price: "Inquire" },
-
-    // ===== CATEGORY: PNEUMATIC FITTINGS (Advanced & Specialty) =====
     { id: 71, name: "Rotary Actuator (Rack & Pinion)", category: "pneumatic-fittings", emoji: "⚙️", description: "Converts linear air pressure to rotational motion.", specs: "Angle: 90/180 Degree; Torque: Adjustable", price: "Inquire" },
     { id: 72, name: "Magnetic Sensor for Cylinder", category: "pneumatic-fittings", emoji: "🧲", description: "Reed switch for detecting piston position.", specs: "Voltage: 5-240V AC/DC; LED Indicator included", price: "Inquire" },
     { id: 73, name: "Pneumatic Vibrator (Piston Type)", category: "pneumatic-fittings", emoji: "📳", description: "Used for material flow in bins and hoppers.", specs: "Frequency: Adjustable via Air Pressure", price: "Inquire" },
@@ -92,8 +78,6 @@ const productCatalog = [
     { id: 78, name: "Air Tank (Reservoir)", category: "pneumatic-fittings", emoji: "🛢️", description: "Stores compressed air to stabilize pressure.", specs: "Capacity: 1L to 10L; Max Press: 10 Bar", price: "Inquire" },
     { id: 79, name: "Vacuum Ejector (Venturi)", category: "pneumatic-fittings", emoji: "🌪️", description: "Generates vacuum using compressed air.", specs: "Nozzle Size: 0.5mm to 2.0mm; Silent Operation", price: "Inquire" },
     { id: 80, name: "Suction Cup (Industrial)", category: "pneumatic-fittings", emoji: "🍄", description: "Rubber pads for vacuum handling systems.", specs: "Material: NBR/Silicone; Diameter: 10mm to 100mm", price: "Inquire" },
-
-    // ===== CATEGORY: VALVES & REGULATORS (Process & Control) =====
     { id: 81, name: "Diaphragm Valve (Sanitary)", category: "valves", emoji: "🧼", description: "Manual valve for pharmaceutical/food processing.", specs: "Body: SS316L; Diaphragm: EPDM/PTFE; Mirror Polish", price: "Inquire" },
     { id: 82, name: "Pinch Valve (Pneumatic)", category: "valves", emoji: "🤏", description: "Ideal for abrasive slurries and powders.", specs: "Sleeve Material: Natural Rubber; Full Bore", price: "Inquire" },
     { id: 83, name: "Angle Seat Valve", category: "valves", emoji: "📐", description: "Pneumatically actuated valve for steam/water.", specs: "Actuator: Polyamide/SS; Media Temp: Up to 180C", price: "Inquire" },
@@ -104,8 +88,6 @@ const productCatalog = [
     { id: 88, name: "Lockout Valve (LOTO)", category: "valves", emoji: "🔒", description: "Safety valve that can be locked in the 'off' position.", specs: "Standard: OSHA Compliant; Port: 1/4\" to 3/4\"", price: "Inquire" },
     { id: 89, name: "Pulse Valve (Dust Collector)", category: "valves", emoji: "💓", description: "High-flow valve for cleaning filter bags.", specs: "Type: Right Angle; Diaphragm: Nitrile Long Life", price: "Inquire" },
     { id: 90, name: "Dual Coil Solenoid Valve", category: "valves", emoji: "🧲", description: "Memory function directional control valve.", specs: "Type: 5/2 Way Double Solenoid; Voltage: 110V AC", price: "Inquire" },
-
-    // ===== CATEGORY: SHEETS & SEALING (Specialized Gaskets) =====
     { id: 91, name: "Expanded PTFE Sheet", category: "sheets", emoji: "🍞", description: "Soft, highly compressible Teflon for uneven flanges.", specs: "Chemical Range: pH 0-14; Food Grade Approved", price: "Inquire" },
     { id: 92, name: "Pure Graphite Ribbon Tape", category: "sheets", emoji: "🎞️", description: "Self-adhesive tape for emergency gasket repairs.", specs: "Temp: 600C; Width: 10mm to 50mm", price: "Inquire" },
     { id: 93, name: "Ceramic Fiber Paper", category: "sheets", emoji: "📄", description: "High-temp insulation for furnaces and kilns.", specs: "Max Temp: 1260C; Thickness: 2mm to 5mm", price: "Inquire" },
@@ -116,8 +98,6 @@ const productCatalog = [
     { id: 98, name: "Liquid Gasket Maker (Grey)", category: "sheets", emoji: "🧴", description: "RTV Silicone for engine and machine sealing.", specs: "Oil Resistant; Sensor Safe; 85g Tube", price: "Inquire" },
     { id: 99, name: "Mica Sheet (Natural)", category: "sheets", emoji: "💎", description: "High dielectric strength for electrical insulation.", specs: "Grade: Muscovite; Temp: Up to 600C", price: "Inquire" },
     { id: 100, name: "Asbestos Rope (Round)", category: "sheets", emoji: "🧶", description: "Sealing for boiler doors and furnace joints.", specs: "Size: 6mm to 50mm; Temp: 450C", price: "Inquire" },
-
-    // ===== CATEGORY: TUBES & HOSES (Industrial & Hydraulic) =====
     { id: 101, name: "Thermoplastic Hose (R7)", category: "tubes", emoji: "🐍", description: "Non-conductive hydraulic hose for utility trucks.", specs: "Material: Polyester Tube; Synthetic Fiber Braid", price: "Inquire" },
     { id: 102, name: "PTFE Lined Smooth Bore Hose", category: "tubes", emoji: "🍦", description: "Chemical transfer hose with SS304 braiding.", specs: "Corrosion Proof; Temp: -60 to +260C", price: "Inquire" },
     { id: 103, name: "Layflat Discharge Hose", category: "tubes", emoji: "🌊", description: "Collapsible hose for high-volume water pumping.", specs: "Size: 2\" to 8\"; Material: PVC/Nitrile Blend", price: "Inquire" },
@@ -128,8 +108,6 @@ const productCatalog = [
     { id: 108, name: "Pneumatic Coil with Fittings", category: "tubes", emoji: "🧬", description: "Pre-assembled spiral hose with swivel nuts.", specs: "Length: 5m/10m/15m; Ready to Use", price: "Inquire" },
     { id: 109, name: "Suction Hose (Heavy Duty)", category: "tubes", emoji: "🐘", description: "Rigid PVC helix reinforced suction hose.", specs: "Usage: Mud, Gravel, Water; Size: up to 12\"", price: "Inquire" },
     { id: 110, name: "LPG Rubber Hose", category: "tubes", emoji: "🔥", description: "High-safety hose for industrial gas connection.", specs: "Standard: IS 9573; Reinforcement: Synthetic Yarn", price: "Inquire" },
-
-    // ===== CATEGORY: TOOLS & ACCESSORIES (Source: K P Sales) =====
     { id: 111, name: "Pneumatic Impact Wrench (1/2\")", category: "tubes", emoji: "🔧", description: "High-torque air tool for automotive assembly.", specs: "Max Torque: 600 Nm; Air Consumption: 4 CFM", price: "Inquire" },
     { id: 112, name: "Air Die Grinder (6mm)", category: "tubes", emoji: "🖍️", description: "Handheld tool for grinding and polishing.", specs: "Speed: 22,000 RPM; Collet Size: 3mm/6mm", price: "Inquire" },
     { id: 113, name: "Pneumatic Riveter", category: "tubes", emoji: "🔫", description: "Automatic tool for industrial riveting.", specs: "Capacity: Up to 4.8mm Rivets; Traction Power: High", price: "Inquire" },
@@ -139,10 +117,7 @@ const productCatalog = [
     { id: 117, name: "Air Nibbler", category: "tubes", emoji: "✂️", description: "Cuts sheet metal without distortion.", specs: "Cutting Capacity: 1.6mm Steel; 2.0mm Aluminum", price: "Inquire" },
     { id: 118, name: "Gravity Feed Spray Gun (W-71)", category: "tubes", emoji: "🎨", description: "Universal spray gun for industrial finishing.", specs: "Nozzle: 1.5mm; Pot Capacity: 400ml", price: "Inquire" },
     { id: 119, name: "Texture Spray Gun (Pneumatic)", category: "tubes", emoji: "🧱", description: "Used for wall coatings and textured paints.", specs: "Hopper Size: 5L; Nozzles: 4mm/6mm/8mm", price: "Inquire" },
-    { id: 120, name: "Pressure Feed Tank (10L)", category: "tubes", emoji: "🥘", description: "Paint tank for large scale continuous spraying.", specs: "Max Pressure: 3 Bar; Includes Regulator", price: "Inquire" }
-
-// ===== CATEGORY: INSTRUMENTATION & ADAPTERS (Source: Panam, Tu-Lok) =====
-    { id: 121, name: "Gauge Snubber (SS316)", category: "pipe-fittings", emoji: "📉", description: "Protects pressure gauges from pressure spikes and surges.", specs: "Connection: 1/2\" NPT; Material: SS316; Type: Adjustable", price: "Inquire" },
+    { id: 120, name: "Pressure Feed Tank (10L)", category: "tubes", emoji: "🥘", description: "Paint tank for large scale continuous spraying.", specs: "Max Pressure: 3 Bar; Includes Regulator", price: "Inquire" } // ===== CATEGORY: INSTRUMENTATION & ADAPTERS (Source: Panam, Tu-Lok) ===== { id: 121, name: "Gauge Snubber (SS316)", category: "pipe-fittings", emoji: "📉", description: "Protects pressure gauges from pressure spikes and surges.", specs: "Connection: 1/2\" NPT; Material: SS316; Type: Adjustable", price: "Inquire" },
     { id: 122, name: "Siphon (Q-Type / U-Type)", category: "pipe-fittings", emoji: "➰", description: "Protects gauges from high-temperature steam damage.", specs: "Material: Carbon Steel / SS316; Max Temp: 400°C", price: "Inquire" },
     { id: 123, name: "Thermowell (Bar Stock)", category: "pipe-fittings", emoji: "🌡️", description: "Protective housing for industrial temperature sensors.", specs: "Type: Flanged/Screwed; Insertion Length: 100mm to 500mm", price: "Inquire" },
     { id: 124, name: "Condensate Pot", category: "pipe-fittings", emoji: "🏺", description: "Used in steam lines to capture condensate and protect instruments.", specs: "Material: Seamless Pipe A106 Gr.B; Pressure: 3000 PSI", price: "Inquire" },
@@ -152,15 +127,11 @@ const productCatalog = [
     { id: 128, name: "Venturi Tube", category: "pipe-fittings", emoji: "⏳", description: "High-accuracy flow measurement device for large pipelines.", specs: "Material: Cast Iron/SS; Low Pressure Loss", price: "Inquire" },
     { id: 129, name: "Magnetic Level Gauge", category: "pipe-fittings", emoji: "📏", description: "Safe visual level indication for high-pressure tanks.", specs: "Body: SS316; Indicator: Bi-Color Flappers; C-C Distance: Custom", price: "Inquire" },
     { id: 130, name: "Sight Flow Indicator (Double Window)", category: "pipe-fittings", emoji: "👁️", description: "Visual inspection tool for flow monitoring.", specs: "Glass: Toughened Borosilicate; End: Flanged/Screwed", price: "Inquire" },
-
-    // ===== CATEGORY: SPECIALTY VALVES (Source: Panam, Jay Agenciez) =====
     { id: 131, name: "Relief Valve (Pilot Operated)", category: "valves", emoji: "🌋", description: "High-capacity safety valve for chemical process lines.", specs: "Set Pressure: Up to 50 Bar; Material: SS316/Alloy 20", price: "Inquire" },
     { id: 132, name: "Double Block and Bleed Valve (DBB)", category: "valves", emoji: "🍱", description: "Multi-port valve for critical isolation and safety.", specs: "Configuration: Ball-Needle-Ball; Pressure: Class 2500", price: "Inquire" },
     { id: 133, name: "Excess Flow Valve", category: "valves", emoji: "🚫", description: "Automatically shuts off flow if a line ruptures.", specs: "Material: SS316; Resets automatically after repair", price: "Inquire" },
     { id: 134, name: "Plug Valve (Lubricated)", category: "valves", emoji: "🔌", description: "Quarter-turn valve for slurry and heavy oil.", specs: "Type: Sleeved/Lubricated; Material: Ductile Iron", price: "Inquire" },
     { id: 135, name: "Diaphragm Operated Control Valve", category: "valves", emoji: "📡", description: "Pneumatic control valve for automated modulation.", specs: "Inlet Signal: 3-15 PSI / 4-20mA; Fail-Safe: Open/Closed", price: "Inquire" },
-
-    // ===== CATEGORY: ADVANCED SEALING (Source: Jay Agenciez, Jay Agenciez) =====
     { id: 136, name: "PTFE Envelope Gasket", category: "sheets", emoji: "✉️", description: "Combines chemical resistance of PTFE with rubber elasticity.", specs: "Core: EPDM/Viton; Outer: Pure PTFE; Size: up to 24\"", price: "Inquire" },
     { id: 137, name: "Graphite Packing Ring (Die Formed)", category: "sheets", emoji: "💍", description: "Precision rings for valve stem and pump sealing.", specs: "Material: Pure Flexible Graphite; Temp: up to 650°C", price: "Inquire" },
     { id: 138, name: "Kevlar Packing (Braided)", category: "sheets", emoji: "🛡️", description: "High-strength packing for abrasive media and slurries.", specs: "Material: Aramid Fiber; Speed: 15 m/s", price: "Inquire" },
@@ -171,15 +142,11 @@ const productCatalog = [
     { id: 143, name: "Gasket Cutter (Industrial)", category: "sheets", emoji: "✂️", description: "Tool for cutting circular gaskets accurately.", specs: "Range: 50mm to 600mm; Heavy Duty Steel", price: "Inquire" },
     { id: 144, name: "Anti-Seize Compound (Copper)", category: "sheets", emoji: "🧴", description: "Prevents seizing and galling of threaded parts.", specs: "Temp: up to 1100°C; Volume: 500g Tin", price: "Inquire" },
     { id: 145, name: "Anaerobic Retaining Compound", category: "sheets", emoji: "🧪", description: "Secures bearings and cylindrical parts.", specs: "Brand: Loctite Type; High Strength", price: "Inquire" },
-
-    // ===== CATEGORY: PNEUMATIC AUTOMATION (Source: P S Industrial, K P Sales) =====
     { id: 146, name: "Air Logic Valve (NOT/AND/OR)", category: "pneumatic-fittings", emoji: "🧠", description: "Performs logical operations using air signals.", specs: "Type: Miniature; Port: M5; No Electricity required", price: "Inquire" },
     { id: 147, name: "Pneumatic Counter (Totalizer)", category: "pneumatic-fittings", emoji: "🔢", description: "Counts pulses for machine cycle monitoring.", specs: "Digits: 6-Digit; Manual Reset; Air Driven", price: "Inquire" },
     { id: 148, name: "Two-Hand Safety Control Unit", category: "pneumatic-fittings", emoji: "👐", description: "Ensures operator safety by requiring two-hand input.", specs: "Response: Simultaneous; Standard: ISO 13849", price: "Inquire" },
     { id: 149, name: "Vacuum Pressure Switch", category: "pneumatic-fittings", emoji: "📟", description: "Digital switch for monitoring vacuum levels.", specs: "Output: NPN/PNP; Display: 3-Color LCD", price: "Inquire" },
     { id: 150, name: "Rodless Cylinder (Magnetic)", category: "pneumatic-fittings", emoji: "🚄", description: "Long stroke cylinder with compact footprint.", specs: "Bore: 16mm-63mm; Stroke: up to 2000mm", price: "Inquire" },
-
-    // ===== BATCH ADDITION: GENERAL INDUSTRIAL VARIANTS (Merged List) =====
     { id: 151, name: "SS 304 U-Bolt with Nuts", category: "pipe-fittings", emoji: "🧲", description: "Pipe support hardware for hanging and fixing.", specs: "Pipe Size: 1/2\" to 12\"; Includes 2 Nuts", price: "Inquire" },
     { id: 152, name: "Spring Pipe Hanger", category: "pipe-fittings", emoji: "➿", description: "Supports pipes while allowing thermal expansion.", specs: "Load Capacity: Variable; Finish: Galv/Epoxy", price: "Inquire" },
     { id: 153, name: "Threaded Rod (SS316)", category: "pipe-fittings", emoji: "📏", description: "Continuous thread rod for support systems.", specs: "Length: 1m/2m; Thread: Metric/UNC", price: "Inquire" },
@@ -211,6 +178,8 @@ const productCatalog = [
     { id: 179, name: "Cupro Nickel 70/30 Elbow", category: "pipe-fittings", emoji: "🌊", description: "Best for marine and salt-water cooling lines.", specs: "Resists bio-fouling", price: "Inquire" },
     { id: 180, name: "Hastelloy C276 Needle Valve", category: "valves", emoji: "☢️", description: "Extreme corrosion resistance for chemical reactors.", specs: "Pressure: 10000 PSI", price: "Inquire" }
 ];
+
+// --- LOGIC TO DISPLAY PRODUCTS ---
 
 // Runs when the page is loaded
 document.addEventListener('DOMContentLoaded', () => {
