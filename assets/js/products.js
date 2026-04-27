@@ -193,24 +193,22 @@ function renderProducts(products) {
     const grid = document.getElementById('productsGrid');
     if (!grid) return;
     grid.innerHTML = ''; 
+
     products.forEach(p => {
         const card = document.createElement('div');
         card.className = 'product-card';
         card.innerHTML = `
-            <div class="card-emoji">${p.emoji}</div>
-            <div class="card-content">
-                <span class="category-tag">${p.category.replace('-', ' ')}</span>
-                <h3>${p.name}</h3>
-                <p>${p.description}</p>
-                <div class="specs">
-                    <strong>Technical Specs:</strong><br>
-                    ${p.specs}
+            <div class="product-image-side">${p.emoji}</div>
+            <div class="product-details-side">
+                <div>
+                    <span class="product-category-tag">${p.category.replace('-', ' ')}</span>
+                    <h3 class="product-title">${p.name}</h3>
+                    <p class="product-text">${p.description}</p>
+                    <div class="product-specs-box">${p.specs}</div>
                 </div>
-                <div class="card-footer">
-                    <span class="price-label">Price: ${p.price}</span>
-                    <button class="inquiry-btn" onclick="sendInquiry('${p.name}')">
-                        Get Quote
-                    </button>
+                <div class="product-footer">
+                    <span class="price-text">Price: ${p.price}</span>
+                    <button class="btn-quote" onclick="sendInquiry('${p.name}')">Get Quote</button>
                 </div>
             </div>
         `;
