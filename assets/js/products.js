@@ -58,7 +58,8 @@ const productCatalog = [
     { id: 57, name: "PVC Steel Wire Reinforced Hose", category: "tubes", emoji: "🥤", description: "Transparent hose for suction and discharge.", specs: "Temp: -10 to 70C; Material: Food Grade PVC", price: "Inquire" },
     { id: 58, name: "Metal Coolant Pipe (Articulated)", category: "tubes", emoji: "🏗️", description: "Directs coolant flow in CNC machines.", specs: "Length: 300mm to 600mm; End: Magnetic Base opt", price: "Inquire" },
     { id: 59, name: "Hydraulic Hose (R2 Type)", category: "tubes", emoji: "🦾", description: "Double steel wire braid high-pressure hose.", specs: "Working Press: 400 Bar; Standard: EN 853", price: "Inquire" },
-    { id: 60, name: "Anti-Spatter Tube (Weld Grade)", category: "tubes", emoji: "🔥", description: "Pneumatic tube for welding environments.", specs: "Material: Polyurethane with outer cover", price: "Inquire" } // ===== CATEGORY: PIPE FITTINGS (Sub-variants & Materials) ===== { id: 61, name: "Carbon Steel A105 Forged Elbow", category: "pipe-fittings", emoji: "🏗️", description: "Heavy-duty forged fitting for high-pressure steam.", specs: "Class: 3000; Standard: ASME B16.11; Size: 1/4\" to 4\"", price: "Inquire" },
+    { id: 60, name: "Anti-Spatter Tube (Weld Grade)", category: "tubes", emoji: "🔥", description: "Pneumatic tube for welding environments.", specs: "Material: Polyurethane with outer cover", price: "Inquire" },
+    { id: 61, name: "Carbon Steel A105 Forged Elbow", category: "pipe-fittings", emoji: "🏗️", description: "Heavy-duty forged fitting for high-pressure steam.", specs: "Class: 3000; Standard: ASME B16.11; Size: 1/4\" to 4\"", price: "Inquire" },
     { id: 62, name: "SS 316 Double Ferrule Equal Cross", category: "pipe-fittings", emoji: "✢", description: "Connects four tubes in a cross configuration.", specs: "Material: ASTM A276 SS316; Max Pressure: 6000 PSI", price: "Inquire" },
     { id: 63, name: "Monel 400 Tube Fittings", category: "pipe-fittings", emoji: "🧪", description: "Special alloy fittings for sea water and chemical use.", specs: "Corrosion Resistant; Custom Sizes Available", price: "Inquire" },
     { id: 64, name: "Inconel 625 Adapter", category: "pipe-fittings", emoji: "🔥", description: "High-nickel alloy for extreme temperature environments.", specs: "NPT Male to Tube; Extreme Pressure Rating", price: "Inquire" },
@@ -117,7 +118,8 @@ const productCatalog = [
     { id: 117, name: "Air Nibbler", category: "tubes", emoji: "✂️", description: "Cuts sheet metal without distortion.", specs: "Cutting Capacity: 1.6mm Steel; 2.0mm Aluminum", price: "Inquire" },
     { id: 118, name: "Gravity Feed Spray Gun (W-71)", category: "tubes", emoji: "🎨", description: "Universal spray gun for industrial finishing.", specs: "Nozzle: 1.5mm; Pot Capacity: 400ml", price: "Inquire" },
     { id: 119, name: "Texture Spray Gun (Pneumatic)", category: "tubes", emoji: "🧱", description: "Used for wall coatings and textured paints.", specs: "Hopper Size: 5L; Nozzles: 4mm/6mm/8mm", price: "Inquire" },
-    { id: 120, name: "Pressure Feed Tank (10L)", category: "tubes", emoji: "🥘", description: "Paint tank for large scale continuous spraying.", specs: "Max Pressure: 3 Bar; Includes Regulator", price: "Inquire" } // ===== CATEGORY: INSTRUMENTATION & ADAPTERS (Source: Panam, Tu-Lok) ===== { id: 121, name: "Gauge Snubber (SS316)", category: "pipe-fittings", emoji: "📉", description: "Protects pressure gauges from pressure spikes and surges.", specs: "Connection: 1/2\" NPT; Material: SS316; Type: Adjustable", price: "Inquire" },
+    { id: 120, name: "Pressure Feed Tank (10L)", category: "tubes", emoji: "🥘", description: "Paint tank for large scale continuous spraying.", specs: "Max Pressure: 3 Bar; Includes Regulator", price: "Inquire" },
+    { id: 121, name: "Gauge Snubber (SS316)", category: "pipe-fittings", emoji: "📉", description: "Protects pressure gauges from pressure spikes and surges.", specs: "Connection: 1/2\" NPT; Material: SS316; Type: Adjustable", price: "Inquire" },
     { id: 122, name: "Siphon (Q-Type / U-Type)", category: "pipe-fittings", emoji: "➰", description: "Protects gauges from high-temperature steam damage.", specs: "Material: Carbon Steel / SS316; Max Temp: 400°C", price: "Inquire" },
     { id: 123, name: "Thermowell (Bar Stock)", category: "pipe-fittings", emoji: "🌡️", description: "Protective housing for industrial temperature sensors.", specs: "Type: Flanged/Screwed; Insertion Length: 100mm to 500mm", price: "Inquire" },
     { id: 124, name: "Condensate Pot", category: "pipe-fittings", emoji: "🏺", description: "Used in steam lines to capture condensate and protect instruments.", specs: "Material: Seamless Pipe A106 Gr.B; Pressure: 3000 PSI", price: "Inquire" },
@@ -180,8 +182,6 @@ const productCatalog = [
 ];
 
 // --- LOGIC TO DISPLAY PRODUCTS ---
-
-// Runs when the page is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('productsGrid');
     if (grid && typeof productCatalog !== 'undefined') {
@@ -189,13 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Function to build the product cards
 function renderProducts(products) {
     const grid = document.getElementById('productsGrid');
     if (!grid) return;
-    
-    grid.innerHTML = ''; // Clear current products
-
+    grid.innerHTML = ''; 
     products.forEach(p => {
         const card = document.createElement('div');
         card.className = 'product-card';
@@ -221,12 +218,10 @@ function renderProducts(products) {
     });
 }
 
-// Function for the inquiry button
 function sendInquiry(productName) {
     window.location.href = `contact.html?product=${encodeURIComponent(productName)}`;
 }
 
-// Function for filtering by category
 function filterProducts(category) {
     if (category === 'all') {
         renderProducts(productCatalog);
@@ -234,4 +229,8 @@ function filterProducts(category) {
         const filtered = productCatalog.filter(p => p.category === category);
         renderProducts(filtered);
     }
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if(btn.getAttribute('onclick').includes(category)) btn.classList.add('active');
+    });
 }
