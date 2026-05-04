@@ -3,113 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Vijaya Lakshmi Enterprises</title>
-    <meta name="description" content="Browse our complete range of industrial & pneumatic products including fittings, valves, regulators, and asbestos sheets.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Products – Vijaya Lakshmi Enterprises | Industrial & Pneumatic Components</title>
+    <meta name="description" content="Browse 180+ industrial products: pneumatic fittings, pipe fittings, valves, tubes, hoses, and joint sheets. Supplier in Vadodara, India.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="light-theme">
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo-section">
-                    <img src="ve-logo.jpg" alt="VE Logo" class="logo">
-                    <span class="company-name">Vijaya Lakshmi Enterprises</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+<body>
+ 
+    <!-- HEADER injected by JS -->
+    <div id="header-placeholder"></div>
+ 
+    <!-- ═══════════════════════════════════════════
+         PAGE HERO
+    ═══════════════════════════════════════════ -->
+    <section class="page-hero">
+        <div class="hero-bg-grid"></div>
+        <div class="container" style="position:relative;z-index:2;">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="sep">›</span>
+                <span>Products</span>
             </div>
-        </div>
-    </nav>
-
-    <section class="page-header">
-        <div class="container">
-            <h1>Our Products</h1>
-            <p>Comprehensive range of industrial and pneumatic solutions</p>
+            <h1>Product Catalogue</h1>
+            <p style="color:rgba(255,255,255,0.6);margin-top:10px;font-size:16px;">
+                180+ industrial components — from pneumatic fittings to specialty alloy valves
+            </p>
         </div>
     </section>
-
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-controls">
-                <input type="text" id="searchInput" class="search-box" placeholder="Search product name or specs..." onkeyup="searchProducts()">
-                
-                <select id="categoryFilter" class="category-filter" onchange="filterProducts(this.value)">
-                    <option value="all">All Categories</option>
-                    <option value="pneumatic-fittings">Pneumatic Fittings</option>
-                    <option value="pipe-fittings">Pipe Fittings</option>
-                    <option value="valves">Valves & Regulators</option>
-                    <option value="sheets">Asbestos & Non-Asbestos Sheets</option>
-                    <option value="tubes">Tubes & Hoses</option>
-                </select>
-            </div>
-        </div>
-    </section>
-
-    <section class="products">
-        <div class="container">
-            <div class="products-grid" id="productsGrid">
-                <div class="loading-state">Loading product catalog...</div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Vijaya Lakshmi Enterprises</h4>
-                    <p>Leading supplier of industrial and pneumatic products in India</p>
+ 
+    <!-- ═══════════════════════════════════════════
+         PRODUCTS LAYOUT
+    ═══════════════════════════════════════════ -->
+    <div class="products-layout">
+ 
+        <!-- SIDEBAR -->
+        <aside class="products-sidebar" id="sidebar">
+            <div class="sidebar-inner">
+ 
+                <!-- Search -->
+                <div class="sidebar-block">
+                    <label class="sidebar-label">Search Products</label>
+                    <div class="search-wrap">
+                        <input
+                            type="text"
+                            id="searchInput"
+                            class="sidebar-search"
+                            placeholder="Name, specs, material…"
+                            autocomplete="off"
+                        >
+                        <span class="search-icon">⌕</span>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+ 
+                <!-- Category Filter -->
+                <div class="sidebar-block">
+                    <label class="sidebar-label">Categories</label>
+                    <ul class="cat-filter-list">
+                        <li>
+                            <button class="cat-filter-btn active" data-cat="all">
+                                <span class="cfb-icon">📦</span>
+                                <span class="cfb-name">All Products</span>
+                                <span class="cfb-count" data-count="all">180</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="cat-filter-btn" data-cat="pipe-fittings">
+                                <span class="cfb-icon">🔩</span>
+                                <span class="cfb-name">Pipe & Tube Fittings</span>
+                                <span class="cfb-count" data-count="pipe-fittings">–</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="cat-filter-btn" data-cat="pneumatic-fittings">
+                                <span class="cfb-icon">⚙️</span>
+                                <span class="cfb-name">Pneumatic Fittings</span>
+                                <span class="cfb-count" data-count="pneumatic-fittings">–</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="cat-filter-btn" data-cat="valves">
+                                <span class="cfb-icon">🎛️</span>
+                                <span class="cfb-name">Valves & Regulators</span>
+                                <span class="cfb-count" data-count="valves">–</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="cat-filter-btn" data-cat="sheets">
+                                <span class="cfb-icon">📋</span>
+                                <span class="cfb-name">Gaskets & Sheets</span>
+                                <span class="cfb-count" data-count="sheets">–</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="cat-filter-btn" data-cat="tubes">
+                                <span class="cfb-icon">〰️</span>
+                                <span class="cfb-name">Tubes, Hoses & Tools</span>
+                                <span class="cfb-count" data-count="tubes">–</span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact Information</h4>
-                    <p>3rd Floor, 346, Aristo Complex<br>Opp. Sanghani Skyz<br>Navrachna University Road<br>Bhayali TP-2, Vadodara-391 410</p>
-                    <p>Email: <a href="mailto:vijayalakshmienterprise1@gmail.com">vijayalakshmienterprise1@gmail.com</a></p>
+ 
+                <!-- CTA -->
+                <div class="sidebar-cta">
+                    <p>Can't find what you need?</p>
+                    <a href="contact.html" class="btn-primary" style="display:block;text-align:center;margin-top:12px;">
+                        Request Custom Quote
+                    </a>
+                </div>
+ 
+            </div>
+        </aside>
+ 
+        <!-- MAIN CONTENT -->
+        <main class="products-main">
+ 
+            <!-- Toolbar -->
+            <div class="products-toolbar">
+                <div class="toolbar-left">
+                    <span class="result-count" id="resultCount">Showing <strong>180</strong> products</span>
+                    <span class="active-category-badge" id="activeCatBadge" style="display:none"></span>
+                </div>
+                <div class="toolbar-right">
+                    <label class="sort-label">Sort:</label>
+                    <select class="sort-select" id="sortSelect">
+                        <option value="default">Default</option>
+                        <option value="az">Name A → Z</option>
+                        <option value="za">Name Z → A</option>
+                        <option value="cat">By Category</option>
+                    </select>
+                    <!-- Mobile filter toggle -->
+                    <button class="mobile-filter-btn" id="mobileFilterBtn">
+                        ☰ Filters
+                    </button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Vijaya Lakshmi Enterprises. All rights reserved.</p>
+ 
+            <!-- Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Populated by JS -->
+            </div>
+ 
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState" style="display:none;">
+                <div class="empty-icon">🔍</div>
+                <h3>No products found</h3>
+                <p>Try a different search term or <button class="link-btn" onclick="resetFilters()">clear all filters</button></p>
+            </div>
+ 
+        </main>
+    </div>
+ 
+    <!-- ═══════════════════════════════════════════
+         QUOTE MODAL
+    ═══════════════════════════════════════════ -->
+    <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" style="display:none;">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+            <div class="modal-header">
+                <div class="modal-tag">Quick Enquiry</div>
+                <h3 id="modalProductName">Product Name</h3>
+            </div>
+            <p class="modal-intro">Fill in your contact details and we'll get back to you with pricing and availability.</p>
+            <div class="modal-form">
+                <div class="mf-group">
+                    <label>Your Name</label>
+                    <input type="text" id="mfName" placeholder="Full name">
+                </div>
+                <div class="mf-group">
+                    <label>Phone / WhatsApp</label>
+                    <input type="tel" id="mfPhone" placeholder="+91 XXXXX XXXXX">
+                </div>
+                <div class="mf-group">
+                    <label>Email</label>
+                    <input type="email" id="mfEmail" placeholder="email@company.com">
+                </div>
+                <div class="mf-group">
+                    <label>Quantity / Additional Notes</label>
+                    <textarea id="mfNotes" placeholder="e.g. Qty: 50 pcs, Size: 1/2 inch, Material: SS316…" rows="3"></textarea>
+                </div>
+                <button class="btn-primary modal-submit" id="modalSubmit" style="width:100%;margin-top:4px;">
+                    Send Enquiry
+                </button>
+                <p class="modal-alt">Or email us directly: <a href="mailto:vijayalakshmienterprise1@gmail.com">vijayalakshmienterprise1@gmail.com</a></p>
             </div>
         </div>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
+    </div>
+ 
+    <!-- FOOTER injected by JS -->
+    <div id="footer-placeholder"></div>
+ 
     <script src="assets/js/products.js"></script>
-
-    <script>
-        function searchProducts() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.getElementsByClassName('product-card');
-            
-            for (let i = 0; i < cards.length; i++) {
-                let name = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-                let desc = cards[i].getElementsByTagName('p')[0].innerText.toLowerCase();
-                
-                if (name.includes(input) || desc.includes(input)) {
-                    cards[i].style.display = "";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+    <script src="components.js"></script>
+ 
 </body>
 </html>
