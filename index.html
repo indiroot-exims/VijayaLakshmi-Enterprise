@@ -9,135 +9,135 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Linked Global Theme Variables & Custom Utilities -->
+    <link rel="stylesheet" href="globals.css">
 </head>
-<body>
+<body class="bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary">
 
     <!-- HEADER (injected by JS) -->
-    <div id="header-placeholder"></div>
+    <div id="header-placeholder" class="sticky top-0 z-50 glass-header border-b border-border"></div>
 
     <!-- ═══════════════════════════════════════════
          HERO
     ═══════════════════════════════════════════ -->
-    <section class="hero">
+    <section class="hero hero-gradient bg-background py-20 lg:py-28 relative overflow-hidden border-b border-border">
         <div class="hero-bg-grid"></div>
-        <div class="container hero-inner">
-            <div class="hero-label">Vadodara, India · Established 2005</div>
-            <h1 class="hero-title">
+        <div class="container hero-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="hero-label inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary bg-secondary/80 rounded-full border border-border mb-6">Vadodara, India · Established 2005</div>
+            <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-6 leading-tight">
                 Precision Industrial &amp;<br>
-                <span class="hero-accent">Pneumatic Expertise</span>
+                <span class="hero-accent text-primary">Pneumatic Expertise</span>
             </h1>
-            <p class="hero-desc">
+            <p class="hero-desc text-lg sm:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
                 Trusted partner for premium pneumatic fittings, instrumentation components, and industrial solutions. Serving critical applications with unwavering precision.
             </p>
-            <div class="hero-cta">
-                <a href="products.html" class="btn-primary">Browse Products</a>
-                <a href="contact.html" class="btn-ghost">Request a Quote →</a>
+            <div class="hero-cta flex flex-wrap gap-4 mb-12">
+                <a href="products.html" class="btn-primary inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold shadow-md hover:bg-primary/90 transition-all duration-200">Browse Products</a>
+                <a href="contact.html" class="btn-ghost inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-secondary text-secondary-foreground font-semibold border border-border hover:bg-muted transition-all duration-200">Request a Quote →</a>
             </div>
-            <div class="hero-stats">
-                <div class="stat"><span class="stat-num">5000+</span><span class="stat-label">Products</span></div>
-                <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Clients Served</span></div>
-                <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Years Experience</span></div>
+            <div class="hero-stats grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-border max-w-2xl">
+                <div class="stat"><span class="stat-num text-3xl font-bold text-foreground block">5000+</span><span class="stat-label text-sm text-muted-foreground">Products</span></div>
+                <div class="stat"><span class="stat-num text-3xl font-bold text-foreground block">500+</span><span class="stat-label text-sm text-muted-foreground">Clients Served</span></div>
+                <div class="stat"><span class="stat-num text-3xl font-bold text-foreground block">20+</span><span class="stat-label text-sm text-muted-foreground">Years Experience</span></div>
             </div>
         </div>
-        <div class="hero-scroll-hint">
+        <div class="hero-scroll-hint hidden md:flex flex-col items-center absolute bottom-6 left-1/2 -translate-x-1/2 text-xs text-muted-foreground tracking-widest uppercase gap-2 opacity-75">
             <span>Scroll</span>
-            <div class="scroll-line"></div>
+            <div class="scroll-line w-0.5 h-6 bg-border animate-pulse"></div>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════
          MARQUEE STRIP
     ═══════════════════════════════════════════ -->
-    <div class="marquee-strip">
-        <div class="marquee-track">
+    <div class="marquee-strip bg-primary text-primary-foreground py-3 border-y border-border overflow-hidden">
+        <div class="marquee-track flex whitespace-nowrap gap-8 text-sm font-semibold uppercase tracking-wider">
             <span>Pneumatic Fittings</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Pipe & Tube Fittings</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Needle Valves</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Ball Valves</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Temperature Instruments</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Asbestos / Non-Asbestos Sheets</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Pressure Gauges</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Regulators & Filters</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <!-- Duplicate for seamless loop -->
             <span>Pneumatic Fittings</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Pipe & Tube Fittings</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Needle Valves</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Ball Valves</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Temperature Instruments</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Asbestos / Non-Asbestos Sheets</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Pressure Gauges</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
             <span>Regulators & Filters</span>
-            <span class="dot">◆</span>
+            <span class="dot text-xs opacity-60">◆</span>
         </div>
     </div>
 
     <!-- ═══════════════════════════════════════════
          PRODUCT CATEGORIES
     ═══════════════════════════════════════════ -->
-    <section class="section categories-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">Our Portfolio</div>
-                <h2 class="section-title">Premium Industrial Products</h2>
-                <p class="section-sub">Curated selection of high-specification components from trusted global manufacturers</p>
+    <section class="section categories-section py-20 bg-background">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header max-w-3xl mb-12">
+                <div class="section-tag inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary bg-secondary/80 rounded-full border border-border mb-3">Our Portfolio</div>
+                <h2 class="section-title text-3xl sm:text-4xl font-bold text-foreground mb-4">Premium Industrial Products</h2>
+                <p class="section-sub text-lg text-muted-foreground">Curated selection of high-specification components from trusted global manufacturers</p>
             </div>
 
-            <div class="categories-grid">
-                <a href="products.html#pneumatic" class="cat-card cat-large">
-                    <div class="cat-icon">⚙</div>
+            <div class="categories-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="products.html#pneumatic" class="cat-card cat-large md:col-span-2 lg:col-span-2 pro-card bg-card text-card-foreground p-8 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="cat-icon text-4xl mb-4 p-3 bg-secondary rounded-lg w-fit">⚙</div>
                     <div class="cat-body">
-                        <h3>Pneumatic Fittings</h3>
-                        <p>Push-in connectors, tube fittings, quick couplers—premium quality for demanding pneumatic systems</p>
-                        <span class="cat-link">Explore →</span>
+                        <h3 class="text-2xl font-bold text-foreground mb-2">Pneumatic Fittings</h3>
+                        <p class="text-muted-foreground mb-6">Push-in connectors, tube fittings, quick couplers—premium quality for demanding pneumatic systems</p>
+                        <span class="cat-link font-semibold text-primary inline-flex items-center">Explore →</span>
                     </div>
                 </a>
-                <a href="products.html#pipe" class="cat-card">
-                    <div class="cat-icon">🔩</div>
+                <a href="products.html#pipe" class="cat-card pro-card bg-card text-card-foreground p-8 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="cat-icon text-4xl mb-4 p-3 bg-secondary rounded-lg w-fit">🔩</div>
                     <div class="cat-body">
-                        <h3>Pipe & Tube Fittings</h3>
-                        <p>SS, CS, brass fittings in NPT, BSP, compression configurations</p>
-                        <span class="cat-link">View Products →</span>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Pipe & Tube Fittings</h3>
+                        <p class="text-muted-foreground mb-6">SS, CS, brass fittings in NPT, BSP, compression configurations</p>
+                        <span class="cat-link font-semibold text-primary inline-flex items-center">View Products →</span>
                     </div>
                 </a>
-                <a href="products.html#valves" class="cat-card">
-                    <div class="cat-icon">🔧</div>
+                <a href="products.html#valves" class="cat-card pro-card bg-card text-card-foreground p-8 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="cat-icon text-4xl mb-4 p-3 bg-secondary rounded-lg w-fit">🔧</div>
                     <div class="cat-body">
-                        <h3>Valves & Regulators</h3>
-                        <p>Ball valves, needle valves, pressure regulators and control equipment</p>
-                        <span class="cat-link">View Products →</span>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Valves & Regulators</h3>
+                        <p class="text-muted-foreground mb-6">Ball valves, needle valves, pressure regulators and control equipment</p>
+                        <span class="cat-link font-semibold text-primary inline-flex items-center">View Products →</span>
                     </div>
                 </a>
-                <a href="products.html#temperature" class="cat-card">
-                    <div class="cat-icon">🌡</div>
+                <a href="products.html#temperature" class="cat-card pro-card bg-card text-card-foreground p-8 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="cat-icon text-4xl mb-4 p-3 bg-secondary rounded-lg w-fit">🌡</div>
                     <div class="cat-body">
-                        <h3>Temperature Instruments</h3>
-                        <p>Thermocouples, RTDs, thermowells, temperature gauges</p>
-                        <span class="cat-link">View Products →</span>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Temperature Instruments</h3>
+                        <p class="text-muted-foreground mb-6">Thermocouples, RTDs, thermowells, temperature gauges</p>
+                        <span class="cat-link font-semibold text-primary inline-flex items-center">View Products →</span>
                     </div>
                 </a>
-                <a href="products.html#sheets" class="cat-card">
-                    <div class="cat-icon">📋</div>
+                <a href="products.html#sheets" class="cat-card pro-card bg-card text-card-foreground p-8 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="cat-icon text-4xl mb-4 p-3 bg-secondary rounded-lg w-fit">📋</div>
                     <div class="cat-body">
-                        <h3>Joint Sheets</h3>
-                        <p>Compressed asbestos and non-asbestos sheets for sealing and gasket applications</p>
-                        <span class="cat-link">View Products →</span>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Joint Sheets</h3>
+                        <p class="text-muted-foreground mb-6">Compressed asbestos and non-asbestos sheets for sealing and gasket applications</p>
+                        <span class="cat-link font-semibold text-primary inline-flex items-center">View Products →</span>
                     </div>
                 </a>
             </div>
@@ -147,41 +147,41 @@
     <!-- ═══════════════════════════════════════════
          WHY CHOOSE US
     ═══════════════════════════════════════════ -->
-    <section class="section why-section">
-        <div class="container why-inner">
-            <div class="why-left">
-                <div class="section-tag">Our Advantage</div>
-                <h2 class="section-title">Built on Excellence,<br>Driven by Precision</h2>
-                <p>We understand the exacting standards of modern industrial operations. Each product is selected for exceptional quality, durability, and compliance with international standards.</p>
-                <a href="about.html" class="btn-primary" style="margin-top:2.5rem;display:inline-block;">Discover Our Story</a>
+    <section class="section why-section py-20 bg-secondary/50 border-y border-border">
+        <div class="container why-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="why-left lg:col-span-5">
+                <div class="section-tag inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary bg-secondary rounded-full border border-border mb-3">Our Advantage</div>
+                <h2 class="section-title text-3xl sm:text-4xl font-bold text-foreground mb-4 leading-tight">Built on Excellence,<br>Driven by Precision</h2>
+                <p class="text-muted-foreground leading-relaxed">We understand the exacting standards of modern industrial operations. Each product is selected for exceptional quality, durability, and compliance with international standards.</p>
+                <a href="about.html" class="btn-primary inline-flex items-center justify-center px-6 py-3.5 mt-8 rounded-md bg-primary text-primary-foreground font-semibold shadow-md hover:bg-primary/90 transition-all duration-200">Discover Our Story</a>
             </div>
-            <div class="why-right">
-                <div class="why-item">
-                    <div class="why-num">01</div>
+            <div class="why-right lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="why-item pro-card bg-card p-6 rounded-lg border border-border">
+                    <div class="why-num text-2xl font-bold text-primary mb-3">01</div>
                     <div>
-                        <h4>Premium Quality</h4>
-                        <p>We exclusively source from world-class manufacturers. Every product meets rigorous quality benchmarks and international certifications.</p>
+                        <h4 class="text-lg font-bold text-foreground mb-2">Premium Quality</h4>
+                        <p class="text-sm text-muted-foreground leading-relaxed">We exclusively source from world-class manufacturers. Every product meets rigorous quality benchmarks and international certifications.</p>
                     </div>
                 </div>
-                <div class="why-item">
-                    <div class="why-num">02</div>
+                <div class="why-item pro-card bg-card p-6 rounded-lg border border-border">
+                    <div class="why-num text-2xl font-bold text-primary mb-3">02</div>
                     <div>
-                        <h4>Extensive Inventory</h4>
-                        <p>5000+ SKUs across pneumatics, valves, fittings, and instrumentation—comprehensive one-stop sourcing for your operations.</p>
+                        <h4 class="text-lg font-bold text-foreground mb-2">Extensive Inventory</h4>
+                        <p class="text-sm text-muted-foreground leading-relaxed">5000+ SKUs across pneumatics, valves, fittings, and instrumentation—comprehensive one-stop sourcing for your operations.</p>
                     </div>
                 </div>
-                <div class="why-item">
-                    <div class="why-num">03</div>
+                <div class="why-item pro-card bg-card p-6 rounded-lg border border-border">
+                    <div class="why-num text-2xl font-bold text-primary mb-3">03</div>
                     <div>
-                        <h4>Technical Expertise</h4>
-                        <p>Our specialists guide you to the right specifications. We provide application support and technical consultation for optimal performance.</p>
+                        <h4 class="text-lg font-bold text-foreground mb-2">Technical Expertise</h4>
+                        <p class="text-sm text-muted-foreground leading-relaxed">Our specialists guide you to the right specifications. We provide application support and technical consultation for optimal performance.</p>
                     </div>
                 </div>
-                <div class="why-item">
-                    <div class="why-num">04</div>
+                <div class="why-item pro-card bg-card p-6 rounded-lg border border-border">
+                    <div class="why-num text-2xl font-bold text-primary mb-3">04</div>
                     <div>
-                        <h4>Competitive Value</h4>
-                        <p>Direct manufacturer relationships ensure competitive pricing without compromising on quality or service.</p>
+                        <h4 class="text-lg font-bold text-foreground mb-2">Competitive Value</h4>
+                        <p class="text-sm text-muted-foreground leading-relaxed">Direct manufacturer relationships ensure competitive pricing without compromising on quality or service.</p>
                     </div>
                 </div>
             </div>
@@ -191,44 +191,44 @@
     <!-- ═══════════════════════════════════════════
          INDUSTRIES SERVED
     ═══════════════════════════════════════════ -->
-    <section class="section industries-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">Industries</div>
-                <h2 class="section-title">Industries We Serve</h2>
+    <section class="section industries-section py-20 bg-background">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header max-w-3xl mb-12">
+                <div class="section-tag inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary bg-secondary/80 rounded-full border border-border mb-3">Industries</div>
+                <h2 class="section-title text-3xl sm:text-4xl font-bold text-foreground">Industries We Serve</h2>
             </div>
-            <div class="industries-grid">
-                <div class="industry-card">
-                    <div class="ind-icon">🏭</div>
-                    <span>Manufacturing</span>
+            <div class="industries-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">🏭</div>
+                    <span class="font-medium text-foreground">Manufacturing</span>
                 </div>
-                <div class="industry-card">
-                    <div class="ind-icon">⚗</div>
-                    <span>Chemical & Pharma</span>
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">⚗</div>
+                    <span class="font-medium text-foreground">Chemical & Pharma</span>
                 </div>
-                <div class="industry-card">
-                    <div class="ind-icon">🛢</div>
-                    <span>Oil & Gas</span>
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">🛢</div>
+                    <span class="font-medium text-foreground">Oil & Gas</span>
                 </div>
-                <div class="industry-card">
-                    <div class="ind-icon">🔋</div>
-                    <span>Power & Energy</span>
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">🔋</div>
+                    <span class="font-medium text-foreground">Power & Energy</span>
                 </div>
-                <div class="industry-card">
-                    <div class="ind-icon">🚜</div>
-                    <span>Agriculture</span>
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">🚜</div>
+                    <span class="font-medium text-foreground">Agriculture</span>
                 </div>
-                <div class="industry-card">
-                    <div class="ind-icon">🚗</div>
-                    <span>Automotive</span>
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">🚗</div>
+                    <span class="font-medium text-foreground">Automotive</span>
                 </div>
-                <div class="industry-card">
-                    <div class="ind-icon">🏗</div>
-                    <span>Construction</span>
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">🏗</div>
+                    <span class="font-medium text-foreground">Construction</span>
                 </div>
-                <div class="industry-card">
-                    <div class="ind-icon">🌡</div>
-                    <span>HVAC & Refrigeration</span>
+                <div class="industry-card pro-card bg-card text-card-foreground p-6 rounded-lg text-center flex flex-col items-center justify-center">
+                    <div class="ind-icon text-3xl mb-3 p-2 bg-secondary rounded-full">🌡</div>
+                    <span class="font-medium text-foreground">HVAC & Refrigeration</span>
                 </div>
             </div>
         </div>
@@ -237,21 +237,21 @@
     <!-- ═══════════════════════════════════════════
          CTA BANNER
     ═══════════════════════════════════════════ -->
-    <section class="cta-section">
-        <div class="container cta-inner">
-            <div>
-                <h2>Need a Custom Solution?</h2>
-                <p>Contact our specialists to discuss your unique requirements. We&apos;ll provide tailored recommendations and competitive quotes.</p>
+    <section class="cta-section py-16 bg-primary text-primary-foreground border-t border-border">
+        <div class="container cta-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div class="max-w-2xl text-center lg:text-left">
+                <h2 class="text-3xl font-bold mb-3">Need a Custom Solution?</h2>
+                <p class="text-primary-foreground/80 text-lg">Contact our specialists to discuss your unique requirements. We&apos;ll provide tailored recommendations and competitive quotes.</p>
             </div>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn-primary">Request a Quote</a>
-                <a href="products.html" class="btn-ghost-dark">Browse Catalogue</a>
+            <div class="cta-buttons flex flex-wrap gap-4 shrink-0">
+                <a href="contact.html" class="btn-primary inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-background text-foreground font-semibold shadow-md hover:bg-secondary transition-all duration-200">Request a Quote</a>
+                <a href="products.html" class="btn-ghost-dark inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-primary-foreground/10 text-primary-foreground font-semibold border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all duration-200">Browse Catalogue</a>
             </div>
         </div>
     </section>
 
     <!-- FOOTER (injected by JS) -->
-    <div id="footer-placeholder"></div>
+    <div id="footer-placeholder" class="bg-sidebar text-sidebar-foreground border-t border-sidebar-border"></div>
 
     <script src="components.js"></script>
     <script src="assets/js/script.js"></script>
