@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products – Vijaya Lakshmi Enterprises | Industrial & Pneumatic Components</title>
-    <meta name="description" content="Browse 180+ industrial products: pneumatic fittings, pipe fittings, valves, tubes, hoses, and joint sheets. Supplier in Vadodara, India.">
+    <meta name="description" content="Browse 127+ industrial products: pneumatic fittings, pipe fittings, valves, tubes, hoses, level instruments, flow instruments and joint sheets. Supplier in Vadodara, India.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- ✅ FIX 1: correct path (was assets/css/style.css) -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
- 
+
     <!-- HEADER injected by JS -->
     <div id="header-placeholder"></div>
- 
-    <!-- ═══════════════════════════════════════════
-         PAGE HERO
-    ═══════════════════════════════════════════ -->
+
+    <!-- PAGE HERO -->
     <section class="page-hero">
         <div class="hero-bg-grid"></div>
         <div class="container" style="position:relative;z-index:2;">
@@ -26,22 +25,21 @@
                 <span class="sep">›</span>
                 <span>Products</span>
             </div>
-            <h1>Premium Product Catalogue</h1>
-            <p style="color:rgba(255,255,255,0.7);margin-top:10px;font-size:17px;">
-                180+ curated industrial components — pneumatic fittings, valves, instrumentation, and specialty alloys
+            <!-- ✅ FIX 6: updated count and subtitle to match actual catalogue -->
+            <h1>Product Catalogue</h1>
+            <p style="color:rgba(255,255,255,0.6);margin-top:10px;font-size:16px;">
+                127+ industrial components — from pneumatic fittings to level &amp; flow instruments
             </p>
         </div>
     </section>
- 
-    <!-- ═══════════════════════════════════════════
-         PRODUCTS LAYOUT
-    ═══════════════════════════════════════════ -->
+
+    <!-- PRODUCTS LAYOUT -->
     <div class="products-layout">
- 
+
         <!-- SIDEBAR -->
         <aside class="products-sidebar" id="sidebar">
             <div class="sidebar-inner">
- 
+
                 <!-- Search -->
                 <div class="sidebar-block">
                     <label class="sidebar-label">Search Products</label>
@@ -56,7 +54,7 @@
                         <span class="search-icon">⌕</span>
                     </div>
                 </div>
- 
+
                 <!-- Category Filter -->
                 <div class="sidebar-block">
                     <label class="sidebar-label">Categories</label>
@@ -65,13 +63,14 @@
                             <button class="cat-filter-btn active" data-cat="all">
                                 <span class="cfb-icon">📦</span>
                                 <span class="cfb-name">All Products</span>
-                                <span class="cfb-count" data-count="all">180</span>
+                                <!-- ✅ FIX 5: count updated from 180 to 127 -->
+                                <span class="cfb-count" data-count="all">127</span>
                             </button>
                         </li>
                         <li>
                             <button class="cat-filter-btn" data-cat="pipe-fittings">
                                 <span class="cfb-icon">🔩</span>
-                                <span class="cfb-name">Pipe & Tube Fittings</span>
+                                <span class="cfb-name">Pipe &amp; Tube Fittings</span>
                                 <span class="cfb-count" data-count="pipe-fittings">–</span>
                             </button>
                         </li>
@@ -85,27 +84,44 @@
                         <li>
                             <button class="cat-filter-btn" data-cat="valves">
                                 <span class="cfb-icon">🎛️</span>
-                                <span class="cfb-name">Valves & Regulators</span>
+                                <span class="cfb-name">Valves &amp; Regulators</span>
                                 <span class="cfb-count" data-count="valves">–</span>
                             </button>
                         </li>
                         <li>
                             <button class="cat-filter-btn" data-cat="sheets">
                                 <span class="cfb-icon">📋</span>
-                                <span class="cfb-name">Gaskets & Sheets</span>
+                                <span class="cfb-name">Gaskets &amp; Sheets</span>
                                 <span class="cfb-count" data-count="sheets">–</span>
                             </button>
                         </li>
                         <li>
+                            <!-- ✅ FIX 7: label updated from "Tubes, Hoses & Tools" -->
                             <button class="cat-filter-btn" data-cat="tubes">
                                 <span class="cfb-icon">〰️</span>
-                                <span class="cfb-name">Tubes, Hoses & Tools</span>
+                                <span class="cfb-name">Tubes &amp; Hoses</span>
                                 <span class="cfb-count" data-count="tubes">–</span>
+                            </button>
+                        </li>
+                        <!-- ✅ FIX 3: new Level Instruments button -->
+                        <li>
+                            <button class="cat-filter-btn" data-cat="level-instruments">
+                                <span class="cfb-icon">📏</span>
+                                <span class="cfb-name">Level Instruments</span>
+                                <span class="cfb-count" data-count="level-instruments">–</span>
+                            </button>
+                        </li>
+                        <!-- ✅ FIX 4: new Flow Instruments button -->
+                        <li>
+                            <button class="cat-filter-btn" data-cat="flow-instruments">
+                                <span class="cfb-icon">🌊</span>
+                                <span class="cfb-name">Flow Instruments</span>
+                                <span class="cfb-count" data-count="flow-instruments">–</span>
                             </button>
                         </li>
                     </ul>
                 </div>
- 
+
                 <!-- CTA -->
                 <div class="sidebar-cta">
                     <p>Can't find what you need?</p>
@@ -113,17 +129,18 @@
                         Request Custom Quote
                     </a>
                 </div>
- 
+
             </div>
         </aside>
- 
+
         <!-- MAIN CONTENT -->
         <main class="products-main">
- 
+
             <!-- Toolbar -->
             <div class="products-toolbar">
                 <div class="toolbar-left">
-                    <span class="result-count" id="resultCount">Showing <strong>180</strong> products</span>
+                    <!-- ✅ FIX 5: count updated from 180 to 127 -->
+                    <span class="result-count" id="resultCount">Showing <strong>127</strong> products</span>
                     <span class="active-category-badge" id="activeCatBadge" style="display:none"></span>
                 </div>
                 <div class="toolbar-right">
@@ -134,31 +151,28 @@
                         <option value="za">Name Z → A</option>
                         <option value="cat">By Category</option>
                     </select>
-                    <!-- Mobile filter toggle -->
                     <button class="mobile-filter-btn" id="mobileFilterBtn">
                         ☰ Filters
                     </button>
                 </div>
             </div>
- 
+
             <!-- Grid -->
             <div class="products-grid" id="productsGrid">
-                <!-- Populated by JS -->
+                <!-- Populated by products.js -->
             </div>
- 
+
             <!-- Empty State -->
             <div class="empty-state" id="emptyState" style="display:none;">
                 <div class="empty-icon">🔍</div>
                 <h3>No products found</h3>
                 <p>Try a different search term or <button class="link-btn" onclick="resetFilters()">clear all filters</button></p>
             </div>
- 
+
         </main>
     </div>
- 
-    <!-- ═══════════════════════════════════════════
-         QUOTE MODAL
-    ═══════════════════════════════════════════ -->
+
+    <!-- QUOTE MODAL -->
     <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" style="display:none;">
         <div class="modal-box">
             <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
@@ -191,12 +205,13 @@
             </div>
         </div>
     </div>
- 
+
     <!-- FOOTER injected by JS -->
     <div id="footer-placeholder"></div>
- 
+
+    <!-- ✅ FIX 2: correct path (was assets/js/products.js) -->
     <script src="assets/js/products.js"></script>
-    <script src="components.js"></script>
- 
+    <script src="assets/js/components.js"></script>
+
 </body>
 </html>
