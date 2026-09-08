@@ -3,215 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products – Vijaya Lakshmi Enterprises | Industrial & Pneumatic Components</title>
-    <meta name="description" content="Browse 127+ industrial products: pneumatic fittings, pipe fittings, valves, tubes, hoses, level instruments, flow instruments and joint sheets. Supplier in Vadodara, India.">
+    <title>Products – Vijaya Lakshmi Enterprises | Industrial Supplier, Vadodara</title>
+    <meta name="description" content="Browse 127+ industrial products across 7 categories: pneumatic fittings, pipe fittings, valves, tubes, gaskets, level instruments, and flow instruments. Vadodara, India.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- ✅ FIX 1: correct path (was assets/css/style.css) -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER injected by JS -->
+    <!-- HEADER (injected) -->
     <div id="header-placeholder"></div>
 
     <!-- PAGE HERO -->
     <section class="page-hero">
-        <div class="hero-bg-grid"></div>
-        <div class="container" style="position:relative;z-index:2;">
-            <div class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span class="sep">›</span>
                 <span>Products</span>
-            </div>
-            <!-- ✅ FIX 6: updated count and subtitle to match actual catalogue -->
+            </nav>
             <h1>Product Catalogue</h1>
-            <p style="color:rgba(255,255,255,0.6);margin-top:10px;font-size:16px;">
-                127+ industrial components — from pneumatic fittings to level &amp; flow instruments
+            <p style="color:rgba(255,255,255,0.6);margin-top:10px;font-size:15px;">
+                127+ industrial components across 7 categories — select a category below to browse
             </p>
         </div>
     </section>
 
-    <!-- PRODUCTS LAYOUT -->
-    <div class="products-layout">
+    <!-- CATEGORY OVERVIEW GRID -->
+    <section style="padding:60px 0 80px;background:#F4F7FA;">
+        <div class="container">
 
-        <!-- SIDEBAR -->
-        <aside class="products-sidebar" id="sidebar">
-            <div class="sidebar-inner">
+            <!-- Section header -->
+            <div style="margin-bottom:40px;">
+                <p style="font-size:10.5px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#E8600A;border-bottom:2px solid #E8600A;padding-bottom:5px;display:inline-block;margin-bottom:12px;">Browse by Category</p>
+                <h2 style="font-family:'Rajdhani',sans-serif;font-size:36px;font-weight:700;text-transform:uppercase;color:#0F1923;letter-spacing:0.5px;">Select a Product Category</h2>
+                <p style="margin-top:10px;font-size:15px;color:#5A7080;max-width:560px;">Each category page has a live search bar, product specifications, and a one-click quote request for every item.</p>
+            </div>
 
-                <!-- Search -->
-                <div class="sidebar-block">
-                    <label class="sidebar-label">Search Products</label>
-                    <div class="search-wrap">
-                        <input
-                            type="text"
-                            id="searchInput"
-                            class="sidebar-search"
-                            placeholder="Name, specs, material…"
-                            autocomplete="off"
-                        >
-                        <span class="search-icon">⌕</span>
+            <!-- 3-column category cards -->
+            <div class="cat-overview-grid">
+
+                <!-- Pipe & Tube Fittings -->
+                <a href="pipe-fittings.html" class="cat-overview-card">
+                    <div class="cat-overview-img" style="background:#1E3A5F;">
+                        <span class="cat-emoji-fallback">🔩</span>
+                        <span class="cat-count-badge">40 Products</span>
                     </div>
+                    <div class="cat-overview-body">
+                        <h3>Pipe &amp; Tube Fittings</h3>
+                        <p>SS and CS buttweld, socket weld, threaded fittings, flanges, ferrule fittings, and specialty alloy components including Monel, Inconel, Duplex, and Titanium grades.</p>
+                        <span class="cat-overview-link">View Products →</span>
+                    </div>
+                </a>
+
+                <!-- Pneumatic Fittings -->
+                <a href="pneumatic-fittings.html" class="cat-overview-card">
+                    <div class="cat-overview-img" style="background:#122440;">
+                        <span class="cat-emoji-fallback">⚙️</span>
+                        <span class="cat-count-badge">19 Products</span>
+                    </div>
+                    <div class="cat-overview-body">
+                        <h3>Pneumatic Fittings</h3>
+                        <p>Push-in connectors, manifold blocks, speed controllers, silencers, rotary actuators, magnetic sensors, air grippers, and complete pneumatic system accessories.</p>
+                        <span class="cat-overview-link">View Products →</span>
+                    </div>
+                </a>
+
+                <!-- Valves & Regulators -->
+                <a href="valves.html" class="cat-overview-card">
+                    <div class="cat-overview-img" style="background:#2E5080;">
+                        <span class="cat-emoji-fallback">🎛️</span>
+                        <span class="cat-count-badge">32 Products</span>
+                    </div>
+                    <div class="cat-overview-body">
+                        <h3>Valves &amp; Regulators</h3>
+                        <p>Ball valves, needle valves, solenoid valves, butterfly valves, gate valves, globe valves, safety relief valves, diaphragm valves, DBB valves, and control valve assemblies.</p>
+                        <span class="cat-overview-link">View Products →</span>
+                    </div>
+                </a>
+
+                <!-- Gaskets & Sheets -->
+                <a href="sheets.html" class="cat-overview-card">
+                    <div class="cat-overview-img" style="background:#1E3A5F;">
+                        <span class="cat-emoji-fallback">📋</span>
+                        <span class="cat-count-badge">15 Products</span>
+                    </div>
+                    <div class="cat-overview-body">
+                        <h3>Gaskets &amp; Sheets</h3>
+                        <p>Compressed asbestos and non-asbestos joint sheets, spiral wound gaskets, PTFE sheets, graphite gaskets, rubber sheets, O-ring kits, and sealing compounds.</p>
+                        <span class="cat-overview-link">View Products →</span>
+                    </div>
+                </a>
+
+                <!-- Tubes & Hoses -->
+                <a href="tubes.html" class="cat-overview-card">
+                    <div class="cat-overview-img" style="background:#122440;">
+                        <span class="cat-emoji-fallback">〰️</span>
+                        <span class="cat-count-badge">6 Products</span>
+                    </div>
+                    <div class="cat-overview-body">
+                        <h3>Tubes &amp; Hoses</h3>
+                        <p>Hydraulic hoses, SS braided flexible hoses, PU and nylon pneumatic tubing, PTFE lined hoses, PVC reinforced hoses, and pre-assembled pneumatic coil sets.</p>
+                        <span class="cat-overview-link">View Products →</span>
+                    </div>
+                </a>
+
+                <!-- Level Instruments -->
+                <a href="level-instruments.html" class="cat-overview-card">
+                    <div class="cat-overview-img" style="background:#2E5080;">
+                        <span class="cat-emoji-fallback">📏</span>
+                        <span class="cat-count-badge">10 Products</span>
+                    </div>
+                    <div class="cat-overview-body">
+                        <h3>Level Instruments</h3>
+                        <p>Reflex and transparent glass level gauges, magnetic level gauges, float and dial indicators, weld pad gauges, tubular gauges, and multi-point level switches for all pressure ratings.</p>
+                        <span class="cat-overview-link">View Products →</span>
+                    </div>
+                </a>
+
+                <!-- Flow Instruments -->
+                <a href="flow-instruments.html" class="cat-overview-card">
+                    <div class="cat-overview-img" style="background:#1E3A5F;">
+                        <span class="cat-emoji-fallback">🌊</span>
+                        <span class="cat-count-badge">5 Products</span>
+                    </div>
+                    <div class="cat-overview-body">
+                        <h3>Flow Instruments</h3>
+                        <p>Orifice plates, orifice meters, flow nozzles, venturi tubes, sight flow indicators, and condensate pots for accurate and reliable industrial flow measurement.</p>
+                        <span class="cat-overview-link">View Products →</span>
+                    </div>
+                </a>
+
+            </div><!-- end cat-overview-grid -->
+
+            <!-- Quick stats strip -->
+            <div style="margin-top:56px;padding:28px 32px;background:#1E3A5F;border-radius:8px;display:flex;gap:0;align-items:center;flex-wrap:wrap;border-left:4px solid #E8600A;">
+                <div style="flex:1;min-width:160px;padding:8px 24px 8px 0;border-right:1px solid rgba(255,255,255,0.1);">
+                    <div style="font-family:'Rajdhani',sans-serif;font-size:36px;font-weight:700;color:#F07830;line-height:1;">127+</div>
+                    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.5);margin-top:4px;">Product SKUs</div>
                 </div>
-
-                <!-- Category Filter -->
-                <div class="sidebar-block">
-                    <label class="sidebar-label">Categories</label>
-                    <ul class="cat-filter-list">
-                        <li>
-                            <button class="cat-filter-btn active" data-cat="all">
-                                <span class="cfb-icon">📦</span>
-                                <span class="cfb-name">All Products</span>
-                                <!-- ✅ FIX 5: count updated from 180 to 127 -->
-                                <span class="cfb-count" data-count="all">127</span>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="cat-filter-btn" data-cat="pipe-fittings">
-                                <span class="cfb-icon">🔩</span>
-                                <span class="cfb-name">Pipe &amp; Tube Fittings</span>
-                                <span class="cfb-count" data-count="pipe-fittings">–</span>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="cat-filter-btn" data-cat="pneumatic-fittings">
-                                <span class="cfb-icon">⚙️</span>
-                                <span class="cfb-name">Pneumatic Fittings</span>
-                                <span class="cfb-count" data-count="pneumatic-fittings">–</span>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="cat-filter-btn" data-cat="valves">
-                                <span class="cfb-icon">🎛️</span>
-                                <span class="cfb-name">Valves &amp; Regulators</span>
-                                <span class="cfb-count" data-count="valves">–</span>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="cat-filter-btn" data-cat="sheets">
-                                <span class="cfb-icon">📋</span>
-                                <span class="cfb-name">Gaskets &amp; Sheets</span>
-                                <span class="cfb-count" data-count="sheets">–</span>
-                            </button>
-                        </li>
-                        <li>
-                            <!-- ✅ FIX 7: label updated from "Tubes, Hoses & Tools" -->
-                            <button class="cat-filter-btn" data-cat="tubes">
-                                <span class="cfb-icon">〰️</span>
-                                <span class="cfb-name">Tubes &amp; Hoses</span>
-                                <span class="cfb-count" data-count="tubes">–</span>
-                            </button>
-                        </li>
-                        <!-- ✅ FIX 3: new Level Instruments button -->
-                        <li>
-                            <button class="cat-filter-btn" data-cat="level-instruments">
-                                <span class="cfb-icon">📏</span>
-                                <span class="cfb-name">Level Instruments</span>
-                                <span class="cfb-count" data-count="level-instruments">–</span>
-                            </button>
-                        </li>
-                        <!-- ✅ FIX 4: new Flow Instruments button -->
-                        <li>
-                            <button class="cat-filter-btn" data-cat="flow-instruments">
-                                <span class="cfb-icon">🌊</span>
-                                <span class="cfb-name">Flow Instruments</span>
-                                <span class="cfb-count" data-count="flow-instruments">–</span>
-                            </button>
-                        </li>
-                    </ul>
+                <div style="flex:1;min-width:160px;padding:8px 24px;border-right:1px solid rgba(255,255,255,0.1);">
+                    <div style="font-family:'Rajdhani',sans-serif;font-size:36px;font-weight:700;color:#F07830;line-height:1;">7</div>
+                    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.5);margin-top:4px;">Categories</div>
                 </div>
-
-                <!-- CTA -->
-                <div class="sidebar-cta">
-                    <p>Can't find what you need?</p>
-                    <a href="contact.html" class="btn-primary" style="display:block;text-align:center;margin-top:12px;">
-                        Request Custom Quote
-                    </a>
+                <div style="flex:1;min-width:160px;padding:8px 24px;border-right:1px solid rgba(255,255,255,0.1);">
+                    <div style="font-family:'Rajdhani',sans-serif;font-size:36px;font-weight:700;color:#F07830;line-height:1;">500+</div>
+                    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.5);margin-top:4px;">Clients Served</div>
                 </div>
-
-            </div>
-        </aside>
-
-        <!-- MAIN CONTENT -->
-        <main class="products-main">
-
-            <!-- Toolbar -->
-            <div class="products-toolbar">
-                <div class="toolbar-left">
-                    <!-- ✅ FIX 5: count updated from 180 to 127 -->
-                    <span class="result-count" id="resultCount">Showing <strong>127</strong> products</span>
-                    <span class="active-category-badge" id="activeCatBadge" style="display:none"></span>
+                <div style="flex:2;min-width:240px;padding:8px 0 8px 24px;">
+                    <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.6;margin-bottom:14px;">Can't find what you need? We source custom specifications on request.</p>
+                    <a href="contact.html" style="display:inline-block;background:#E8600A;color:#fff;padding:10px 22px;border-radius:4px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;">Get a Custom Quote</a>
                 </div>
-                <div class="toolbar-right">
-                    <label class="sort-label">Sort:</label>
-                    <select class="sort-select" id="sortSelect">
-                        <option value="default">Default</option>
-                        <option value="az">Name A → Z</option>
-                        <option value="za">Name Z → A</option>
-                        <option value="cat">By Category</option>
-                    </select>
-                    <button class="mobile-filter-btn" id="mobileFilterBtn">
-                        ☰ Filters
-                    </button>
-                </div>
-            </div>
-
-            <!-- Grid -->
-            <div class="products-grid" id="productsGrid">
-                <!-- Populated by products.js -->
             </div>
 
-            <!-- Empty State -->
-            <div class="empty-state" id="emptyState" style="display:none;">
-                <div class="empty-icon">🔍</div>
-                <h3>No products found</h3>
-                <p>Try a different search term or <button class="link-btn" onclick="resetFilters()">clear all filters</button></p>
-            </div>
-
-        </main>
-    </div>
-
-    <!-- QUOTE MODAL -->
-    <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" style="display:none;">
-        <div class="modal-box">
-            <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
-            <div class="modal-header">
-                <div class="modal-tag">Quick Enquiry</div>
-                <h3 id="modalProductName">Product Name</h3>
-            </div>
-            <p class="modal-intro">Fill in your contact details and we'll get back to you with pricing and availability.</p>
-            <div class="modal-form">
-                <div class="mf-group">
-                    <label>Your Name</label>
-                    <input type="text" id="mfName" placeholder="Full name">
-                </div>
-                <div class="mf-group">
-                    <label>Phone / WhatsApp</label>
-                    <input type="tel" id="mfPhone" placeholder="+91 XXXXX XXXXX">
-                </div>
-                <div class="mf-group">
-                    <label>Email</label>
-                    <input type="email" id="mfEmail" placeholder="email@company.com">
-                </div>
-                <div class="mf-group">
-                    <label>Quantity / Additional Notes</label>
-                    <textarea id="mfNotes" placeholder="e.g. Qty: 50 pcs, Size: 1/2 inch, Material: SS316…" rows="3"></textarea>
-                </div>
-                <button class="btn-primary modal-submit" id="modalSubmit" style="width:100%;margin-top:4px;">
-                    Send Enquiry
-                </button>
-                <p class="modal-alt">Or email us directly: <a href="mailto:vijayalakshmienterprise1@gmail.com">vijayalakshmienterprise1@gmail.com</a></p>
-            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- FOOTER injected by JS -->
+    <!-- FOOTER (injected) -->
     <div id="footer-placeholder"></div>
 
-    <!-- ✅ FIX 2: correct path (was assets/js/products.js) -->
-    <script src="assets/js/products.js"></script>
-    <script src="assets/js/components.js"></script>
-
+    <script src="components.js"></script>
 </body>
 </html>
