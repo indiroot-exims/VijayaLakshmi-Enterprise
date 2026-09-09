@@ -61,7 +61,7 @@ const PRODUCT_IMAGES = {
     38: 'images/Valves/2ValveManifold.jpg',
 
     // PneumaticFittings
-    39: 'images/PneumaticFittings/39.jpg',
+39: 'images/Pneumatic Fittings/AirFilterRegulator.jpg',
 
     // Valves
     40: 'images/Valves/AutoDrainValve.jpg',
