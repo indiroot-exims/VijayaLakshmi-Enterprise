@@ -12,180 +12,180 @@
 //  as needed for each item.
 // ─────────────────────────────────────────────────────────────
 const PRODUCT_IMAGES = {
-    // Pipe & Tube Fittings
-    1: 'images/Pipe& Tube Fittings/SS 304L Buttweld 90° Elbow.jpg',
-    2: 'images/Pipe& Tube Fittings/SS 316L Buttweld Tee.jpg',
-    3: 'images/Pipe& Tube Fittings/SS Concentric Reducer.jpg',
-    4: 'images/Pipe& Tube Fittings/SS Eccentric Reducer.jpg',
-    5: 'images/Pipe& Tube Fittings/SS Stub End Lap Joint.jpg',
-    6: 'images/Pipe& Tube Fittings/Hex Long Nipple.jpg',
-    7: 'images/Pipe& Tube Fittings/Double Ferrule Male Connector.jpg',
-    8: 'images/Pipe& Tube Fittings/Double Ferrule Union Tee.jpg',
-    9: 'images/Pipe& Tube Fittings/Bulkhead Male Connector.jpg',
-    10: 'images/Pipe& Tube Fittings/Swivel Female Adapter.jpg',
-    11: 'images/Pipe& Tube Fittings/Hex Reducing Bushing.jpg',
-    12: 'images/Pipe& Tube Fittings/Pipe Cap Buttweld.jpg',
-    13: 'images/Pipe& Tube Fittings/Socket Weld Elbow 90°.jpg',
-    14: 'images/Pipe& Tube Fittings/Socket Weld Full Coupling.jpg',
-    15: 'images/Pipe& Tube Fittings/Threaded Union Class 3000.jpg',
+   // PipeAndTubeFittings
+    1: 'images/PipeAndTubeFittings/SS304LButtweld90Elbow.jpg',
+    2: 'images/PipeAndTubeFittings/SS316LButtweldTee.jpg',
+    3: 'images/PipeAndTubeFittings/SSConcentricReducer.jpg',
+    4: 'images/PipeAndTubeFittings/SSEccentricReducer.jpg',
+    5: 'images/PipeAndTubeFittings/SSStubEndLapJoint.jpg',
+    6: 'images/PipeAndTubeFittings/HexLongNipple.jpg',
+    7: 'images/PipeAndTubeFittings/DoubleFerruleMaleConnector.jpg',
+    8: 'images/PipeAndTubeFittings/DoubleFerruleUnionTee.jpg',
+    9: 'images/PipeAndTubeFittings/BulkheadMaleConnector.jpg',
+    10: 'images/PipeAndTubeFittings/SwivelFemaleAdapter.jpg',
+    11: 'images/PipeAndTubeFittings/HexReducingBushing.jpg',
+    12: 'images/PipeAndTubeFittings/PipeCapButtweld.jpg',
+    13: 'images/PipeAndTubeFittings/SocketWeldElbow90.jpg',
+    14: 'images/PipeAndTubeFittings/SocketWeldFullCoupling.jpg',
+    15: 'images/PipeAndTubeFittings/ThreadedUnionClass3000.jpg',
 
-    // Pneumatic Fittings
-    16: 'images/Pneumatic Fittings/One-Touch Straight Connector PC.jpg',
-    17: 'images/Pneumatic Fittings/Push-In Elbow PL.jpg',
-    18: 'images/Pneumatic Fittings/Push-In Tee PB-PD.jpg',
-    19: 'images/Pneumatic Fittings/Pneumatic Speed Controller JSC.jpg',
-    20: 'images/Pneumatic Fittings/Glycerin Filled Gauge SS.jpg',
-    21: 'images/Pneumatic Fittings/Hand Slide Valve.jpg',
-    22: 'images/Pneumatic Fittings/Sintered Bronze Silencer.jpg',
-    23: 'images/Pneumatic Fittings/Quick Exhaust Valve.jpg',
+    // PneumaticFittings
+    16: 'images/PneumaticFittings/OneTouchStraightConnectorPC.jpg',
+    17: 'images/PneumaticFittings/PushInElbowPL.jpg',
+    18: 'images/PneumaticFittings/PushInTeePBPD.jpg',
+    19: 'images/PneumaticFittings/PneumaticSpeedControllerJSC.jpg',
+    20: 'images/PneumaticFittings/GlycerinFilledGaugeSS.jpg',
+    21: 'images/PneumaticFittings/HandSlideValve.jpg',
+    22: 'images/PneumaticFittings/SinteredBronzeSilencer.jpg',
+    23: 'images/PneumaticFittings/QuickExhaustValve.jpg',
 
-    // Tubes & Hoses
-    24: 'images/Tube & Hoses/PU Tubing Polyurethane.jpg',
-    25: 'images/Tube & Hoses/Nylon PA12 Tubing.jpg',
+    // TubeAndHoses
+    24: 'images/TubeAndHoses/PUTubingPolyurethane.jpg',
+    25: 'images/TubeAndHoses/NylonPA12Tubing.jpg',
 
-    // Pneumatic Fittings
-    26: 'images/Pneumatic Fittings/Pneumatic Manifold Block.jpg',
-    27: 'images/Pneumatic Fittings/Check Valve.jpg',
-    28: 'images/Pneumatic Fittings/Rotary Joint.jpg',
-    29: 'images/Pneumatic Fittings/Y-Type Push-In.jpg',
-    30: 'images/Pneumatic Fittings/Metal Air Blow Gun.jpg',
-
-    // Valves
-   31: 'images/Valves/2-2 Way Solenoid Valve.jpg',
-    32: 'images/Valves/5-2 Way Single Solenoid Valve.jpg',
-    33: 'images/Valves/3-2 Way Hand Lever Valve.jpg',
-    34: 'images/Valves/Pneumatic Foot Pedal Valve.jpg',
-    35: 'images/Valves/SS 316 Needle Valve.jpg',
-    36: 'images/Valves/SS 3-Piece Ball Valve.jpg',
-    37: 'images/Valves/High Pressure Check Valve.jpg',
-    38: 'images/Valves/2-Valve Manifold.jpg',
-
-    // Pneumatic Fittings
-    39: 'images/Pneumatic Fittings/39.jpg',
+    // PneumaticFittings
+    26: 'images/PneumaticFittings/PneumaticManifoldBlock.jpg',
+    27: 'images/PneumaticFittings/CheckValve.jpg',
+    28: 'images/PneumaticFittings/RotaryJoint.jpg',
+    29: 'images/PneumaticFittings/YTypePushIn.jpg',
+    30: 'images/PneumaticFittings/MetalAirBlowGun.jpg',
 
     // Valves
-    40: 'images/Valves/Auto Drain Valve.jpg',
-    41: 'images/Valves/Butterfly Valve Wafer Type.jpg',
-    42: 'images/Valves/Gate Valve Forged Steel.jpg',
-    43: 'images/Valves/Globe Valve Flanged.jpg',
-    44: 'images/Valves/Y-Strainer SS316.jpg',
-    45: 'images/Valves/Float Valve SS.jpg',
+    31: 'images/Valves/22WaySolenoidValve.jpg',
+    32: 'images/Valves/52WaySingleSolenoidValve.jpg',
+    33: 'images/Valves/32WayHandLeverValve.jpg',
+    34: 'images/Valves/PneumaticFootPedalValve.jpg',
+    35: 'images/Valves/SS316NeedleValve.jpg',
+    36: 'images/Valves/SS3PieceBallValve.jpg',
+    37: 'images/Valves/HighPressureCheckValve.jpg',
+    38: 'images/Valves/2ValveManifold.jpg',
 
-    // Gaskets & Sheets
-    46: 'images/Sheets/Compressed Asbestos Sheet CAF-120.jpg',
-    47: 'images/Sheets/Non-Asbestos Gasket Sheet.jpg',
-    48: 'images/Sheets/Spiral Wound Gasket SS316.jpg',
-    49: 'images/Sheets/PTFE Thread Seal Tape.jpg',
-    50: 'images/Sheets/Graphite Gasket Sheet.jpg',
-    51: 'images/Sheets/Rubber Sheet (Neoprene).jpg',
-    52: 'images/Sheets/Cork Sheet Rubberized.jpg',
-    53: 'images/Sheets/Silicon Spray Mould Release.jpg',
-    54: 'images/Sheets/Loctite 542 Thread Sealant.jpg',
-    55: 'images/Sheets/Klingerit Gasket Sheet.jpg',
-
-    // Tubes & Hoses
-    56: 'images/Tube & Hoses/Flexible SS Braid Hose.jpg',
-    57: 'images/Tube & Hoses/PVC Steel Wire Reinforced Hose.jpg',
-    58: 'images/Tube & Hoses/Hydraulic Hose R2 Type.jpg',
-
-    // Pipe & Tube Fittings
-    59: 'images/Pipe& Tube Fittings/Carbon Steel A105 Forged Elbow.jpg',
-    60: 'images/Pipe& Tube Fittings/SS 316 Double Ferrule Equal Cross.jpg',
-    61: 'images/Pipe& Tube Fittings/SS 304 Slip-On Flange.jpg',
-    62: 'images/Pipe& Tube Fittings/Weld Neck Flange SS316.jpg',
-    63: 'images/Pipe& Tube Fittings/Blind Flange Carbon Steel.jpg',
-    64: 'images/Pipe& Tube Fittings/SS 304 Seamless Pipe Sch 40.jpg',
-    65: 'images/Pipe& Tube Fittings/Brass Hex Nipple.jpg',
-
-    // Pneumatic Fittings
-    66: 'images/Pneumatic Fittings/Rotary Actuator Rack & Pinion.jpg',
-    67: 'images/Pneumatic Fittings/Magnetic Sensor for Cylinder.jpg',
-    68: 'images/Pneumatic Fittings/Pneumatic Vibrator.jpg',
-    69: 'images/Pneumatic Fittings/Stainless Steel Push-In Fitting.jpg',
-    70: 'images/Pneumatic Fittings/Composite Quick Coupler.jpg',
+    // PneumaticFittings
+    39: 'images/PneumaticFittings/39.jpg',
 
     // Valves
-    71: 'images/Valves/Safety Relief Valve Brass.jpg',
-    72: 'images/Valves/High Pressure Ball Valve.jpg',
-    73: 'images/Valves/Pressure Reducing Valve.jpg',
-    74: 'images/Valves/Dual Coil Solenoid Valve.jpg',
+    40: 'images/Valves/AutoDrainValve.jpg',
+    41: 'images/Valves/ButterflyValveWaferType.jpg',
+    42: 'images/Valves/GateValveForgedSteel.jpg',
+    43: 'images/Valves/GlobeValveFlanged.jpg',
+    44: 'images/Valves/YStrainerSS316.jpg',
+    45: 'images/Valves/FloatValveSS.jpg',
+
+    // GasketsAndSheets
+    46: 'images/Sheets/CompressedAsbestosSheetCAF120.jpg',
+    47: 'images/Sheets/NonAsbestosGasketSheet.jpg',
+    48: 'images/Sheets/SpiralWoundGasketSS316.jpg',
+    49: 'images/Sheets/PTFEThreadSealTape.jpg',
+    50: 'images/Sheets/GraphiteGasketSheet.jpg',
+    51: 'images/Sheets/RubberSheetNeoprene.jpg',
+    52: 'images/Sheets/CorkSheetRubberized.jpg',
+    53: 'images/Sheets/SiliconSprayMouldRelease.jpg',
+    54: 'images/Sheets/Loctite542ThreadSealant.jpg',
+    55: 'images/Sheets/KlingeritGasketSheet.jpg',
+
+    // TubeAndHoses
+    56: 'images/TubeAndHoses/FlexibleSSBraidHose.jpg',
+    57: 'images/TubeAndHoses/PVCSteelWireReinforcedHose.jpg',
+    58: 'images/TubeAndHoses/HydraulicHoseR2Type.jpg',
+
+    // PipeAndTubeFittings
+    59: 'images/PipeAndTubeFittings/CarbonSteelA105ForgedElbow.jpg',
+    60: 'images/PipeAndTubeFittings/SS316DoubleFerruleEqualCross.jpg',
+    61: 'images/PipeAndTubeFittings/SS304SlipOnFlange.jpg',
+    62: 'images/PipeAndTubeFittings/WeldNeckFlangeSS316.jpg',
+    63: 'images/PipeAndTubeFittings/BlindFlangeCarbonSteel.jpg',
+    64: 'images/PipeAndTubeFittings/SS304SeamlessPipeSch40.jpg',
+    65: 'images/PipeAndTubeFittings/BrassHexNipple.jpg',
+
+    // PneumaticFittings
+    66: 'images/PneumaticFittings/RotaryActuatorRackAndPinion.jpg',
+    67: 'images/PneumaticFittings/MagneticSensorForCylinder.jpg',
+    68: 'images/PneumaticFittings/PneumaticVibrator.jpg',
+    69: 'images/PneumaticFittings/StainlessSteelPushInFitting.jpg',
+    70: 'images/PneumaticFittings/CompositeQuickCoupler.jpg',
+
+    // Valves
+    71: 'images/Valves/SafetyReliefValveBrass.jpg',
+    72: 'images/Valves/HighPressureBallValve.jpg',
+    73: 'images/Valves/PressureReducingValve.jpg',
+    74: 'images/Valves/DualCoilSolenoidValve.jpg',
 
     // Sheets
-    75: 'images/Sheets/Viton O-Ring Kit.jpg',
-    76: 'images/Sheets/Hydraulic Seal Kit.jpg',
-    77: 'images/Sheets/Mica Sheet Natural.jpg',
-    78: 'images/Sheets/Asbestos Rope (Round).jpg',
+    75: 'images/Sheets/VitonORingKit.jpg',
+    76: 'images/Sheets/HydraulicSealKit.jpg',
+    77: 'images/Sheets/MicaSheetNatural.jpg',
+    78: 'images/Sheets/AsbestosRopeRound.jpg',
 
-    // Tubes & Hoses
-    79: 'images/Tube & Hoses/Pneumatic Coil with Fittings.jpg',
+    // TubeAndHoses
+    79: 'images/TubeAndHoses/PneumaticCoilWithFittings.jpg',
 
-    // Pipe & Tube Fittings
-    80: 'images/Pipe& Tube Fittings/Gauge Snubber SS316.jpg',
-    81: 'images/Pipe& Tube Fittings/Siphon Q-Type - U-Type.jpg',
-    82: 'images/Pipe& Tube Fittings/Thermowell Bar Stock.jpg',
-    83: 'images/Pipe& Tube Fittings/Condensate Pot.jpg',
-    84: 'images/Pipe& Tube Fittings/Air Header - Distribution Manifold.jpg',
-    85: 'images/Pipe& Tube Fittings/Orifice Plate SS316.jpg',
-    86: 'images/Pipe& Tube Fittings/Venturi Tube.jpg',
-    87: 'images/Pipe& Tube Fittings/Magnetic Level Gauge.jpg',
-    88: 'images/Pipe& Tube Fittings/Sight Flow Indicator Double Window.jpg',
+    // PipeAndTubeFittings
+    80: 'images/PipeAndTubeFittings/GaugeSnubberSS316.jpg',
+    81: 'images/PipeAndTubeFittings/SiphonQTypeUType.jpg',
+    82: 'images/PipeAndTubeFittings/ThermowellBarStock.jpg',
+    83: 'images/PipeAndTubeFittings/CondensatePot.jpg',
+    84: 'images/PipeAndTubeFittings/AirHeaderDistributionManifold.jpg',
+    85: 'images/PipeAndTubeFittings/OrificePlateSS316.jpg',
+    86: 'images/PipeAndTubeFittings/VenturiTube.jpg',
+    87: 'images/PipeAndTubeFittings/MagneticLevelGauge.jpg',
+    88: 'images/PipeAndTubeFittings/SightFlowIndicatorDoubleWindow.jpg',
 
     // Valves
-    89: 'images/Valves/Relief Valve Pilot Operated.jpg',
-    90: 'images/Valves/Double Block and Bleed Valve.jpg',
+    89: 'images/Valves/ReliefValvePilotOperated.jpg',
+    90: 'images/Valves/DoubleBlockAndBleedValve.jpg',
 
     // Sheets
-    91: 'images/Sheets/O-Ring Cord Splicing Kit.jpg',
+    91: 'images/Sheets/ORingCordSplicingKit.jpg',
 
     // Valves
-    92: 'images/Valves/Needle Valve Panel Mount.jpg',
+    92: 'images/Valves/NeedleValvePanelMount.jpg',
 
-    // Pipe & Tube Fittings
-    93: 'images/Pipe& Tube Fittings/SS 304 Forged Tee Threaded.jpg',
-    94: 'images/Pipe& Tube Fittings/SS Pipe Cross.jpg',
-    95: 'images/Pipe& Tube Fittings/SS Socket Weld Union.jpg',
-    96: 'images/Pipe& Tube Fittings/SS Concentric Swage Nipple.jpg',
-    97: 'images/Pipe& Tube Fittings/Alloy Steel Pipe Fitting WP11.jpg',
+    // PipeAndTubeFittings
+    93: 'images/PipeAndTubeFittings/SS304ForgedTeeThreaded.jpg',
+    94: 'images/PipeAndTubeFittings/SSPipeCross.jpg',
+    95: 'images/PipeAndTubeFittings/SSSocketWeldUnion.jpg',
+    96: 'images/PipeAndTubeFittings/SSConcentricSwageNipple.jpg',
+    97: 'images/PipeAndTubeFittings/AlloySteelPipeFittingWP11.jpg',
 
     // Valves
-    98: 'images/Valves/ABS Flanged Ball Valve Manual.jpg',
-    99: 'images/Valves/Actuated Ball Valve.jpg',
-    100: 'images/Valves/Butterfly Valve Lever Operated.jpg',
-    101: 'images/Valves/Butterfly Valve Gear Operated.jpg',
-    102: 'images/Valves/Ball Check Valve.jpg',
-    103: 'images/Valves/Industrial Sight Glass.jpg',
+    98: 'images/Valves/ABSFlangedBallValveManual.jpg',
+    99: 'images/Valves/ActuatedBallValve.jpg',
+    100: 'images/Valves/ButterflyValveLeverOperated.jpg',
+    101: 'images/Valves/ButterflyValveGearOperated.jpg',
+    102: 'images/Valves/BallCheckValve.jpg',
+    103: 'images/Valves/IndustrialSightGlass.jpg',
 
-    // Level Instruments
-    104: 'images/Level/Reflex Liquid Level Gauge.jpg',
-    105: 'images/Level/Transparent Liquid Level Gauge.jpg',
-    106: 'images/Level/for storage tanks and pressure vessels..jpg',
-    107: 'images/Level/Tubular Liquid Level Gauge.jpg',
-    108: 'images/Level/Float & Board Liquid Level Gauge.jpg',
-    109: 'images/Level/Float & Dial Liquid Level Gauge.jpg',
-    110: 'images/Level/Top-Side Mounted Magnetic Level Gauge.jpg',
-    111: 'images/Level/Multi-Point Liquid Level Switch.jpg',
-    112: 'images/Level/Side Mounted Float Level Switch.jpg',
-    113: 'images/Level/Displacer-Conductivity Level Switch.jpg',
-   
-    // Flow Instruments
-    114: 'images/Flow/Double Window Sight Flow Indicator.jpg',
-    115: 'images/Flow/Orifice Plate with Flange Assemblies.jpg',
-    116: 'images/Flow/Senior Orifice Meter & Meter Run.jpg',
-    117: 'images/Flow/Flow Nozzle & Flow Conditioner.jpg',
-    118: 'images/Flow/Petrotech Condensate Pot.jpg',
-   
+    // LevelInstruments
+    104: 'images/Level/ReflexLiquidLevelGauge.jpg',
+    105: 'images/Level/TransparentLiquidLevelGauge.jpg',
+    106: 'images/Level/ForStorageTanksAndPressureVessels.jpg',
+    107: 'images/Level/TubularLiquidLevelGauge.jpg',
+    108: 'images/Level/FloatAndBoardLiquidLevelGauge.jpg',
+    109: 'images/Level/FloatAndDialLiquidLevelGauge.jpg',
+    110: 'images/Level/TopSideMountedMagneticLevelGauge.jpg',
+    111: 'images/Level/MultiPointLiquidLevelSwitch.jpg',
+    112: 'images/Level/SideMountedFloatLevelSwitch.jpg',
+    113: 'images/Level/DisplacerConductivityLevelSwitch.jpg',
+
+    // FlowInstruments
+    114: 'images/Flow/DoubleWindowSightFlowIndicator.jpg',
+    115: 'images/Flow/OrificePlateWithFlangeAssemblies.jpg',
+    116: 'images/Flow/SeniorOrificeMeterAndMeterRun.jpg',
+    117: 'images/Flow/FlowNozzleAndFlowConditioner.jpg',
+    118: 'images/Flow/PetrotechCondensatePot.jpg',
+
     // Valves
-     119: 'images/Valves/Petrotech Instrument Ball Valves.jpg',
-    120: 'images/Valves/Petrotech Instrument Needle Valves.jpg',
-    121: 'images/Valves/Petrotech Instrument Check Valves.jpg',
-    122: 'images/Valves/Petrotech Valve Manifolds 2-3-5 Valve.jpg',
-    123: 'images/Valves/Double Block & Bleed Valve Compact.jpg',
-   
-    // Pipe & Tube Fittings
-    124: 'images/Pipe& Tube Fittings/Instrument Tube & Pipe Fittings.jpg',
-    125: 'images/Pipe& Tube Fittings/PANAM Pipe Adaptor PA Series.jpg',
-    126: 'images/Pipe& Tube Fittings/PANAM Pipe Reducing Adaptor PRA.jpg',
-    127: 'images/Pipe& Tube Fittings/PANAM Pipe Reducing Bushing PRB.jpg',};
+    119: 'images/Valves/PetrotechInstrumentBallValves.jpg',
+    120: 'images/Valves/PetrotechInstrumentNeedleValves.jpg',
+    121: 'images/Valves/PetrotechInstrumentCheckValves.jpg',
+    122: 'images/Valves/PetrotechValveManifolds235Valve.jpg',
+    123: 'images/Valves/DoubleBlockAndBleedValveCompact.jpg',
+
+    // PipeAndTubeFittings
+    124: 'images/PipeAndTubeFittings/InstrumentTubeAndPipeFittings.jpg',
+    125: 'images/PipeAndTubeFittings/PANAMPipeAdaptorPASeries.jpg',
+    126: 'images/PipeAndTubeFittings/PANAMPipeReducingAdaptorPRA.jpg',
+    127: 'images/PipeAndTubeFittings/PANAMPipeReducingBushingPRB.jpg',};
 
 // ─────────────────────────────────────────────────────────────
 //  FULL CATALOGUE  (127 products, all categories validated)
