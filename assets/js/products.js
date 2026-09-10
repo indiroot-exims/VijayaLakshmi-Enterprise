@@ -324,7 +324,7 @@ const productCatalog = [
 //  CATEGORY META
 // ─────────────────────────────────────────────────────────────
 const CAT_LABELS = {
-    'pipe-fittings':      'Pipe & Tube Fittings',
+    'pipe-fittings':      'Instruments Fittings',
     'pneumatic-fittings': 'Pneumatic Fittings',
     'valves':             'Valves & Regulators',
     'sheets':             'Gaskets & Sheets',
