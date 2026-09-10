@@ -318,6 +318,247 @@ const productCatalog = [
   { id:125,name:"PANAM Pipe Adaptor (PA Series)",         category:"instruments-fittings",hidden: false,      emoji:"🔌", description:"Male to Female pipe thread adaptors for high-pressure instrumentation connections.", specs:"Pressure: Up to 10,000 PSI · Threads: NPT/BSPP/BSPT · Size: ⅛\"–2\" · Material: SS316/CS/Brass/Monel/Hastelloy" },
   { id:126,name:"PANAM Pipe Reducing Adaptor (PRA)",      category:"instruments-fittings", hidden: false,     emoji:"📉", description:"Male to Female thread reducing adaptors for smooth line transitions.",         specs:"Pressure: Up to 10,000 PSI · Threads: NPT/ISO Tapered · Size: ⅛\"×¼\" to 2\"×1½\" · Material: SS316/CS/Alloy 400" },
   { id:127,name:"PANAM Pipe Reducing Bushing (PRB)",      category:"instruments-fittings", hidden: false,     emoji:"🪙", description:"Hexagonal male-to-female reducing bushings for compact thread size reduction.", specs:"Pressure: Up to 10,000 PSI · Threads: NPT/BSPT/BSPP · Size: ¼\"M × ⅛\"F to 2\"M × 1½\"F · Material: SS316/304/CS" },
+// --- THERMOCOUPLES ---
+  {
+    "id": 128,
+    "name": "Base Metal Thermocouple (Types J, K, N)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "High-accuracy base metal thermocouples for industrial heat measurement in petrochemical, cement, and power plants.",
+    "specs": "Types: J, K, N | Element Size: 1, 1.5, 3, 4.5, 6, 8mm (MI), up to 22mm (Non-MI) | Sheath: SS316L, SS310, HRS 446, Inconel, Nickel, Monel, Hastelloy, Titanium, Ceramic",
+    "hidden": false
+  },
+  {
+    "id": 129,
+    "name": "Noble Metal Thermocouple (Types R, S, B)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "High-temperature platinum noble metal thermocouples designed for glass industries, furnaces, and ovens.",
+    "specs": "Types: R, S, B | Element Wire Size: 0.30, 0.35, 0.40, 0.45, 0.50 mm | Sheath: Ceramic (Ker 710, 610), Inconel",
+    "hidden": false
+  },
+  {
+    "id": 130,
+    "name": "Mineral Insulated Thermocouple",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Rugged mineral-insulated thermocouples providing high vibration resistance and flexibility for tight spaces.",
+    "specs": "Types: J, K, N, R, S, T, B | Configuration: Simple, Duplex, Multipoints | Termination: Weatherproof or Flameproof Head",
+    "hidden": false
+  },
+  {
+    "id": 131,
+    "name": "Multi-Point Thermocouple",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Multi-point thermocouple assembly for simultaneous temperature profiling across multiple zone depths.",
+    "specs": "Configuration: Multipoints | Termination: Head W/P or FLP, Ceramic terminal block with SS plate",
+    "hidden": false
+  },
+  {
+    "id": 132,
+    "name": "Skin / Washer / Bolt Type Thermocouple",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Surface temperature measurement thermocouple featuring washer or bolt-on mounting attachments.",
+    "specs": "Mounting: Washer / Bolt-on surface mounting | Protection Sheath: Stainless Steel / Inconel",
+    "hidden": false
+  },
+  {
+    "id": 133,
+    "name": "Bayonet Type Thermocouple",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Spring-loaded bayonet thermocouple designed for rapid installation and steady contact in plastics and packaging machinery.",
+    "specs": "Fitting: Spring-loaded bayonet cap | Configuration: Simple / Duplex",
+    "hidden": false
+  },
+  {
+    "id": 134,
+    "name": "Portable / Handheld Thermocouple Probe",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Handheld thermocouple probes designed for quick surface and immersion measurement with portable indicators.",
+    "specs": "Probe Types: Lead type, Bow type, Roller type, Air Temp type probe",
+    "hidden": false
+  },
+  {
+    "id": 135,
+    "name": "Glass & Steam Turbine Thermocouple",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Specialized high-temperature thermocouples built specifically for glass manufacturing and steam turbine applications.",
+    "specs": "High temp T/C with alumina sheath / Seal pot connection",
+    "hidden": false
+  },
+
+  // --- RTDs (RESISTANCE TEMPERATURE DETECTORS) ---
+  {
+    "id": 136,
+    "name": "Flexible RTD Sensor",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Flexible resistance temperature detector suitable for bending around narrow bends and contours.",
+    "specs": "Types: PT-100, PT-50, PT-1000, PT-200, CU-50 | Accuracy: Class A, 1/2, 1/3, 1/5 DIN Class B",
+    "hidden": false
+  },
+  {
+    "id": 137,
+    "name": "Head Mounted RTD Sensor",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Standard industrial RTD assembly with weatherproof or flameproof connection head.",
+    "specs": "Element: Ceramic or Glass Encapsulated Wire Wound, Thin Film | Sheath: Seamless SS304, SS316L | Dia: 1.5mm to 12mm",
+    "hidden": false
+  },
+  {
+    "id": 138,
+    "name": "Mineral Insulated RTD Sensor",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Vibration-proof mineral-insulated RTD probe for extreme mechanical stress environments.",
+    "specs": "Types: 2, 3, 4 Wire | Sheath Length: 25mm to 5000mm | Termination: W/P or FLP Head, Seal Pot with Flying Leads",
+    "hidden": false
+  },
+  {
+    "id": 139,
+    "name": "Vibration Proof RTD for DG Sets",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Heavy-duty vibration-proof RTD engineered specifically for diesel generator sets and rotating machinery.",
+    "specs": "High vibration resistance | Configuration: Simple, Duplex | Connection: Threaded / Union",
+    "hidden": false
+  },
+  {
+    "id": 140,
+    "name": "Bearing & Winding Temp RTD",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Flat and miniature RTDs engineered for embedding inside motor windings and bearing housings.",
+    "specs": "Compact profile | Element: PT-100 / PT-1000 | Configuration: Simple or Duplex",
+    "hidden": false
+  },
+  {
+    "id": 141,
+    "name": "Tri-Clover Sanitary RTD",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Sanitary RTD sensor with tri-clover flange fitting designed for hygienic pharmaceutical and food applications.",
+    "specs": "Process Connection: Tri-clover / Sanitary Flange 1\", 1.5\", 2\" | Material: Polished SS316L",
+    "hidden": false
+  },
+
+  // --- THERMOWELLS & CONNECTORS ---
+  {
+    "id": 142,
+    "name": "Drilled / Bar Stock Thermowell",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Solid drilled bar-stock thermowells providing heavy protection for temperature sensors in high-pressure lines.",
+    "specs": "Materials: SS304, SS316, SS310, SS321, Inconel 600/800, Hastelloy, Monel, Alloy 20, Titanium | Flange: 1\", 1.5\", 2\" ANSI 150/300/600",
+    "hidden": false
+  },
+  {
+    "id": 143,
+    "name": "Coated & Clad Thermowell (PTFE / Tantalum / Graphite)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Thermowells with specialized chemical barrier coatings or claddings for highly corrosive media.",
+    "specs": "Coatings: Ceramic, PTFE, PVDF, PFA | Cladding: Platinum Thimble, Tantalum, Titanium, Nickel, Graphite",
+    "hidden": false
+  },
+  {
+    "id": 144,
+    "name": "Thermocouple Plug & Jack Connectors",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Color-coded thermocouple extension connectors available in standard, miniature, and panel-mounted profiles.",
+    "specs": "Calibration Types: J (Black), K (Yellow), R/S/B (Green), T (Blue) | Material: Special PVC & High-Temp Ceramic",
+    "hidden": false
+  },
+  {
+    "id": 145,
+    "name": "Adjustable Stainless Steel Connector",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Adjustable compression fittings for mounting temperature probes securely into process lines.",
+    "specs": "Material: SS304, SS316L | Thread Sizes: 1/8\", 1/4\", 1/2\", 3/4\", 1\" BSP / NPT",
+    "hidden": false
+  },
+
+  // --- PRESSURE TRANSMITTERS ---
+  {
+    "id": 146,
+    "name": "Standard Pressure Transmitter (Model PT-121)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "General-purpose industrial pressure transmitter for liquid and gas pressure measurement.",
+    "specs": "Model: PT-121 | Pressure Range: 0-100 bar (configurable -1...0 to 1000 bar) | Output: 4-20mA | Supply: 12-36VDC",
+    "hidden": false
+  },
+  {
+    "id": 147,
+    "name": "Digital / Smart Pressure Transmitter with HART",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Smart digital pressure transmitter with HART protocol communication and built-in LCD indicator.",
+    "specs": "Output: 4-20mA with HART | Accuracy: 0.1% FS / 0.25% FS | Display: Digital LCD | Protection: IP-68",
+    "hidden": false
+  },
+  {
+    "id": 148,
+    "name": "Piezometer / Hydrostatic Level Pressure Transmitter",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Submersible piezometric hydrostatic pressure sensor for liquid level monitoring in wells and tanks.",
+    "specs": "Output: 4-20mA, 0-5V, 0-10V | Process Connection: Submersible / Threaded | Accuracy: up to 0.1% FS",
+    "hidden": false
+  },
+  {
+    "id": 149,
+    "name": "Pencil Type Compact Pressure Transmitter",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Ultra-compact pencil-style pressure transmitter for installations with severe space constraints.",
+    "specs": "Process Connection: 1/4\" or 1/2\" NPT/BSP | Output: 4-20mA, 0.5-4.5V | Voltage: 12-36VDC",
+    "hidden": false
+  },
+  {
+    "id": 150,
+    "name": "Pressure Transmitter with Cooling Tower",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Pressure transmitter integrated with a cooling siphon/tower attachment for elevated temperature fluids.",
+    "specs": "Operating Temp: up to high thermal ranges | Output: 4-20mA, 0-10V | Accuracy: 0.25% FS",
+    "hidden": false
+  },
+
+  // --- TEMPERATURE TRANSMITTERS & INSTRUMENTATION ---
+  {
+    "id": 151,
+    "name": "Digital Temperature Transmitter (TT-300-05)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Head-mounted digital temperature transmitter with LCD display and IP68 cast aluminum housing.",
+    "specs": "Code: TT-300-05 | Sensor: RTD | Accuracy: ±0.2% FS | Range: -200°C to 1370°C | Output: 4-20mA | Supply: 12-45VDC",
+    "hidden": false
+  },
+  {
+    "id": 152,
+    "name": "DIN Rail Temperature Transmitter (TT-300-104)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Rail-mounted temperature transmitter designed for control cabinet and PLC panel integration.",
+    "specs": "Code: TT-300-104 | Sensor: RTD | Accuracy: ±0.2% FS | Range: -200°C to 1370°C | Output: 4-20mA | Mounting: DIN Rail",
+    "hidden": false
+  },
+  {
+    "id": 153,
+    "name": "Universal Temperature Transmitter (TT-300-03)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Universal process temperature transmitter with programmable input capabilities.",
+    "specs": "Code: TT-300-03 | Sensor: Universal RTD / TC | Accuracy: ±0.2% FS | Range: -200°C to 1370°C | Output: 4-20mA",
+    "hidden": false
+  },
+  {
+    "id": 154,
+    "name": "Smart Temperature Transmitter (TT-300-103)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "High-accuracy smart head-mount temperature transmitter with advanced diagnostics.",
+    "specs": "Code: TT-300-103 | Sensor: RTD | Accuracy: ±0.2% FS | Range: -200°C to 1370°C | Output: 4-20mA | Protection: IP-68",
+    "hidden": false
+  },
+  {
+    "id": 155,
+    "name": "Humi-Temp Indicator (Model RHT-302)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "Digital humidity and temperature dual indicator for environmental monitoring.",
+    "specs": "Model: RHT-302 | Dual Display: Humidity & Temperature | Application: Cleanroom & Industrial environment monitoring",
+    "hidden": false
+  },
+  {
+    "id": 156,
+    "name": "Signal Isolator (1 IN 1 OUT / 1 IN 2 OUT / 2 IN 2 OUT)",
+    "category": "Pressure & Temperature Instruments",
+    "description": "DIN rail process signal isolator and splitter for eliminating ground loops and driving multiple outputs.",
+    "specs": "Configurations: 1 IN 1 OUT, 1 IN 2 OUT, 2 IN 2 OUT | Mounting: DIN Rail | Signal: 4-20mA standard",
+    "hidden": false
+  } ,
 ];
 
 // ─────────────────────────────────────────────────────────────
@@ -330,6 +571,7 @@ const CAT_LABELS = {
     'sheets':             'Gaskets & Sheets',
     'level-instruments':  'Level Instruments',
     'flow-instruments':   'Flow Instruments',
+     'pressure-temperature-insturments':       'Pressure & Temperature Instruments'
    // Category Removed 'tubes':              'Tubes & Hoses',
    
 };
