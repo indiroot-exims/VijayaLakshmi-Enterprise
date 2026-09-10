@@ -1140,22 +1140,33 @@ img { max-width: 100%; display: block; }
     overflow: hidden;
     border-bottom: 1px solid var(--border);
     flex-shrink: 0;
+    padding: 12px; /* Adds breathing space around images */
+    box-sizing: border-box;
 }
+
 .product-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Shows the full image without cutting/cropping */
+    object-position: center;
     transition: transform var(--transition);
 }
-.product-card:hover .product-img-wrap img { transform: scale(1.04); }
+
+.product-card:hover .product-img-wrap img { 
+    transform: scale(1.04); 
+}
+
 .product-img-fallback {
     font-size: 52px;
     opacity: 0.7;
 }
+
 .product-img-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(15,25,35,0.3), transparent);
+    background: linear-gradient(to top, rgba(15,25,35,0.08), transparent); /* Softened gradient for clearer image viewing */
     pointer-events: none;
 }
 
