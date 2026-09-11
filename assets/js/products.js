@@ -193,7 +193,7 @@ const PRODUCT_IMAGES = {
 131: 'images/PressureAndTemperatureInstruments/pressure-temp-multi-point-thermocouple.jpg',
 132: 'images/PressureAndTemperatureInstruments/pressure-temp-skin-washer-bolt-thermocouple.jpg',
 133: 'images/PressureAndTemperatureInstruments/pressure-temp-bayonet-thermocouple.jpg',
-134: 'images/PressureAndTemperatureInstruments/pressure-temp-portable-handheld-thermocouple-probe.jpg',
+134: 'images/PressureAndTemperatureInstruments/pressure-temp-portable-handheld-thermocouple-probe.png',
 135: 'images/PressureAndTemperatureInstruments/pressure-temp-glass-steam-turbine-thermocouple.jpg',
 136: 'images/PressureAndTemperatureInstruments/pressure-temp-flexible-rtd-sensor.jpg',
 137: 'images/PressureAndTemperatureInstruments/pressure-temp-head-mounted-rtd-sensor.jpg',
