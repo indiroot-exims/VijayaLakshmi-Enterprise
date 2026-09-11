@@ -185,7 +185,7 @@ const PRODUCT_IMAGES = {
     124: 'images/PipeAndTubeFittings/InstrumentTubeAndPipeFittings.jpg',
     125: 'images/PipeAndTubeFittings/PANAMPipeAdaptorPASeries.jpg',
     126: 'images/PipeAndTubeFittings/PANAMPipeReducingAdaptorPRA.jpg',
-    127: 'images/PipeAndTubeFittings/PANAMPipeReducingBushingPRB.jpg',};
+    127: 'images/PipeAndTubeFittings/PANAMPipeReducingBushingPRB.jpg',
 // PressureAndTemperatureInstruments
 128: 'images/PressureAndTemperatureInstruments/pressure-temp-base-metal-thermocouple.png',
 129: 'images/PressureAndTemperatureInstruments/pressure-temp-noble-metal-thermocouple.png',
@@ -215,7 +215,7 @@ const PRODUCT_IMAGES = {
 153: 'images/PressureAndTemperatureInstruments/pressure-temp-universal-temperature-transmitter-tt-300-03.jpg',
 154: 'images/PressureAndTemperatureInstruments/pressure-temp-smart-temperature-transmitter-tt-300-103.png',
 155: 'images/PressureAndTemperatureInstruments/pressure-temp-humi-temp-indicator-rht302.png',
-156: 'images/PressureAndTemperatureInstruments/pressure-temp-signal-isolator.jpg',
+156: 'images/PressureAndTemperatureInstruments/pressure-temp-signal-isolator.jpg',};
 
 // ─────────────────────────────────────────────────────────────
 //  FULL CATALOGUE  (127 products, all categories validated)
