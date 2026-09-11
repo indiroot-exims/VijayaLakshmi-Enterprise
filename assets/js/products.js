@@ -204,7 +204,7 @@ const PRODUCT_IMAGES = {
 142: 'images/PressureAndTemperatureInstruments/pressure-temp-drilled-bar-stock-thermowell.jpg',
 143: 'images/PressureAndTemperatureInstruments/pressure-temp-coated-clad-thermowell.jpg',
 144: 'images/PressureAndTemperatureInstruments/pressure-temp-thermocouple-plug-jack-connectors.jpg',
-145: 'images/PressureAndTemperatureInstruments/pressure-temp-adjustable-ss-connector.jpg',
+145: 'images/PressureAndTemperatureInstruments/pressure-temp-adjustable-ss-connector.png',
 146: 'images/PressureAndTemperatureInstruments/pressure-temp-standard-pressure-transmitter-pt121.png',
 147: 'images/PressureAndTemperatureInstruments/pressure-temp-digital-smart-pressure-transmitter-hart.png',
 148: 'images/PressureAndTemperatureInstruments/pressure-temp-piezometer-hydrostatic-level-transmitter.png',
