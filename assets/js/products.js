@@ -601,7 +601,7 @@ const CAT_LABELS = {
     'sheets':             'Gaskets & Sheets',
     'level-instruments':  'Level Instruments',
     'flow-instruments':   'Flow Instruments',
-     'pressure-temperature-insturments':       'Pressure & Temperature Instruments'
+     'pressure-temperature-insturments':       'Pressure & Temperature Instruments',
    // Category Removed 'tubes':              'Tubes & Hoses',
    
 };
