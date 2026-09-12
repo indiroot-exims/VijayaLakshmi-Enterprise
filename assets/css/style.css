@@ -94,15 +94,26 @@ img { max-width: 100%; display: block; }
 .topbar-right a:hover { color: #fff; }
 
 /* ════════════════════════════════════════
-   NAVBAR
+   NAVBAR & HEADER OVERFLOW FIXES
 ════════════════════════════════════════ */
+
+/* Force injected header wrappers to stack on top and allow dropdown spillover */
+#header-placeholder,
+header,
+.site-header {
+    position: relative !important;
+    z-index: 99999 !important;
+    overflow: visible !important;
+}
+
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 9999; /* Increased to stay above all hero sections */
+    z-index: 99999 !important;
     background: var(--bg-white);
     border-bottom: 3px solid var(--maroon);
     transition: box-shadow var(--transition);
+    overflow: visible !important;
 }
 .navbar.scrolled { box-shadow: var(--shadow-md); }
 
@@ -112,7 +123,8 @@ img { max-width: 100%; display: block; }
     justify-content: space-between;
     height: 68px;
     gap: 20px;
-    position: relative; /* Establish local stacking context */
+    position: relative;
+    overflow: visible !important;
 }
 
 .logo-wrap { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
@@ -135,8 +147,17 @@ img { max-width: 100%; display: block; }
     margin-top: 1px;
 }
 
-.nav-links { display: flex; align-items: center; gap: 2px; margin: 0 auto; }
-.nav-links li { position: relative; }
+.nav-links { 
+    display: flex; 
+    align-items: center; 
+    gap: 2px; 
+    margin: 0 auto; 
+    overflow: visible !important;
+}
+.nav-links li { 
+    position: relative; 
+    overflow: visible !important;
+}
 
 .nav-item {
     display: flex;
@@ -168,7 +189,10 @@ img { max-width: 100%; display: block; }
     box-shadow: var(--shadow-lg);
     min-width: 240px;
     padding: 6px 0;
-    z-index: 10000; /* Ensured top priority over hero layer elements */
+    z-index: 100000 !important;
+}
+.has-dropdown {
+    overflow: visible !important;
 }
 .has-dropdown:hover .dropdown { display: block; }
 .dropdown li a {
@@ -213,6 +237,14 @@ img { max-width: 100%; display: block; }
 .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Ensure home hero section stays strictly behind header elements */
+.hero,
+.home-hero,
+.hero-section {
+    position: relative;
+    z-index: 1 !important;
+}
 
 /* ════════════════════════════════════════
    HERO
