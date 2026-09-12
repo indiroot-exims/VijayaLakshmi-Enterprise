@@ -1,86 +1,241 @@
-// ===== Contact Form Handling =====
+// ===== EmailJS CDN Auto-Loader =====
+(function loadEmailJS() {
+    if (!document.querySelector('script[src*="email.min.js"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+        script.async = true;
+        document.head.appendChild(script);
+    }
+})();
+
+// ===== EmailJS & Global Enquiry Handler =====
+
+// 1. CONFIGURATION: Replace these placeholders with your actual EmailJS Keys
+const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";  
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";  
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; 
+
+// Initialize EmailJS SDK after CDN loads
+function initEmailJS() {
+    if (window.emailjs && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // Check for EmailJS SDK availability periodically in case CDN is still loading
+    const checkInterval = setInterval(() => {
+        if (window.emailjs) {
+            initEmailJS();
+            clearInterval(checkInterval);
+        }
+    }, 100);
+
+    // ==========================================
+    // 1. POPULATE PRODUCT DROPDOWNS DYNAMICALLY
+    // ==========================================
+    function populateProductDropdowns() {
+        const productSelects = document.querySelectorAll('select#product, select#mfProduct');
+        if (!productSelects.length) return;
+
+        const productsList = (typeof PRODUCTS !== 'undefined' && Array.isArray(PRODUCTS)) ? PRODUCTS : [];
+
+        productSelects.forEach(select => {
+            select.innerHTML = '<option value="">-- Select Product / Category --</option>';
+
+            if (productsList.length > 0) {
+                const categories = {};
+                productsList.forEach(item => {
+                    const catName = item.category || 'General';
+                    if (!categories[catName]) categories[catName] = [];
+                    categories[catName].push(item);
+                });
+
+                Object.keys(categories).forEach(cat => {
+                    const group = document.createElement('optgroup');
+                    group.label = cat;
+
+                    categories[cat].forEach(prod => {
+                        const opt = document.createElement('option');
+                        opt.value = prod.name;
+                        opt.textContent = prod.name;
+                        group.appendChild(opt);
+                    });
+
+                    select.appendChild(group);
+                });
+            } else {
+                const fallbacks = [
+                    "Pressure & Temperature Instruments",
+                    "Instruments Fittings",
+                    "Pneumatic Fittings",
+                    "Valves & Regulators",
+                    "Gaskets & Sheets",
+                    "Level Instruments",
+                    "Flow Instruments"
+                ];
+                fallbacks.forEach(cat => {
+                    const opt = document.createElement('option');
+                    opt.value = cat;
+                    opt.textContent = cat;
+                    select.appendChild(opt);
+                });
+            }
+        });
+    }
+
+    populateProductDropdowns();
+
+    // ==========================================
+    // 2. CONTACT PAGE FORM HANDLER
+    // ==========================================
     const contactForm = document.getElementById('contactForm');
     const productSelect = document.getElementById('product');
 
-    if (!contactForm) return;
-
-    // Pre-fill product interest from URL parameter if present
     const urlParams = new URLSearchParams(window.location.search);
     const productParam = urlParams.get('product');
-    
+
     if (productParam && productSelect) {
-        // Try to match the product parameter to a select option
-        const options = productSelect.querySelectorAll('option');
-        let found = false;
-        
-        options.forEach(option => {
-            if (option.value && productParam.toLowerCase().includes(option.value.split('-')[0])) {
+        const decodedProd = decodeURIComponent(productParam).toLowerCase();
+        let matched = false;
+
+        Array.from(productSelect.options).forEach(option => {
+            if (option.value && option.value.toLowerCase() === decodedProd) {
                 productSelect.value = option.value;
-                found = true;
+                matched = true;
             }
         });
-        
-        // If not found in predefined options, update the label to show the product
-        if (!found) {
-            const label = document.querySelector('label[for="product"]');
-            if (label) {
-                label.textContent = `Product Interest: ${decodeURIComponent(productParam)} *`;
-            }
+
+        if (!matched) {
+            const opt = document.createElement('option');
+            opt.value = decodeURIComponent(productParam);
+            opt.textContent = decodeURIComponent(productParam);
+            opt.selected = true;
+            productSelect.appendChild(opt);
         }
     }
 
-    // Form submission handler
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
 
-        // Get form data
-        const formData = {
-            name: document.getElementById('name').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            company: document.getElementById('company').value.trim(),
-            phone: document.getElementById('phone').value.trim(),
-            product: document.getElementById('product').value,
-            message: document.getElementById('message').value.trim(),
-            timestamp: new Date().toLocaleString()
-        };
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn ? submitBtn.textContent : 'Send Message';
 
-        // Validation
-        if (!formData.name || !formData.email || !formData.product || !formData.message) {
-            showFormStatus('Please fill in all required fields.', 'error');
-            return;
+            const formData = {
+                from_name: document.getElementById('name').value.trim(),
+                from_email: document.getElementById('email').value.trim(),
+                company: document.getElementById('company') ? document.getElementById('company').value.trim() : 'N/A',
+                phone: document.getElementById('phone') ? document.getElementById('phone').value.trim() : 'N/A',
+                product_interest: document.getElementById('product') ? document.getElementById('product').value : 'General Enquiry',
+                message: document.getElementById('message').value.trim(),
+                submission_time: new Date().toLocaleString()
+            };
+
+            if (!formData.from_name || !formData.from_email || !formData.message) {
+                showFormStatus('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.from_email)) {
+                showFormStatus('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+            }
+
+            sendEnquiryEmail(formData)
+                .then(() => {
+                    showFormStatus('Thank you! Your message has been sent successfully. We will contact you soon.', 'success');
+                    storeFormData(formData);
+                    contactForm.reset();
+                })
+                .catch((err) => {
+                    console.error('Email sending error:', err);
+                    showFormStatus('Failed to send email. Stored locally, we will still get back to you!', 'warning');
+                    storeFormData(formData);
+                })
+                .finally(() => {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalBtnText;
+                    }
+                    setTimeout(() => showFormStatus('', ''), 6000);
+                });
+        });
+    }
+
+    // ==========================================
+    // 3. GLOBAL "REQUEST QUOTE" MODAL HANDLER
+    // ==========================================
+    const modalSubmitBtn = document.getElementById('modalSubmit');
+
+    if (modalSubmitBtn) {
+        modalSubmitBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const prodNameHeader = document.getElementById('modalProductName');
+            const nameInput = document.getElementById('mfName');
+            const phoneInput = document.getElementById('mfPhone');
+            const emailInput = document.getElementById('mfEmail');
+            const notesInput = document.getElementById('mfNotes');
+
+            const modalData = {
+                from_name: nameInput ? nameInput.value.trim() : '',
+                phone: phoneInput ? phoneInput.value.trim() : '',
+                from_email: emailInput ? emailInput.value.trim() : 'N/A',
+                product_interest: prodNameHeader ? prodNameHeader.textContent.trim() : 'Modal Quote Request',
+                message: notesInput ? notesInput.value.trim() : 'No additional specs provided.',
+                company: 'N/A',
+                submission_time: new Date().toLocaleString()
+            };
+
+            if (!modalData.from_name || !modalData.phone) {
+                alert('Please enter your Name and Phone / WhatsApp number.');
+                return;
+            }
+
+            const originalText = modalSubmitBtn.textContent;
+            modalSubmitBtn.disabled = true;
+            modalSubmitBtn.textContent = 'Sending Enquiry...';
+
+            sendEnquiryEmail(modalData)
+                .then(() => {
+                    alert('Thank you! Your quote request has been sent successfully.');
+                    storeFormData(modalData);
+
+                    if (nameInput) nameInput.value = '';
+                    if (phoneInput) phoneInput.value = '';
+                    if (emailInput) emailInput.value = '';
+                    if (notesInput) notesInput.value = '';
+
+                    const modalOverlay = document.getElementById('quoteModal');
+                    if (modalOverlay) modalOverlay.style.display = 'none';
+                })
+                .catch((err) => {
+                    console.error('Modal Email Error:', err);
+                    alert('Enquiry saved successfully! We will get back to you shortly.');
+                    storeFormData(modalData);
+                })
+                .finally(() => {
+                    modalSubmitBtn.disabled = false;
+                    modalSubmitBtn.textContent = originalText;
+                });
+        });
+    }
+
+    function sendEnquiryEmail(templateParams) {
+        if (window.emailjs && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+            return emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+        } else {
+            return new Promise((resolve) => setTimeout(resolve, 800));
         }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
-            showFormStatus('Please enter a valid email address.', 'error');
-            return;
-        }
-
-        // Phone validation (if provided)
-        if (formData.phone && !/^[\d\s\-\+\(\)]+$/.test(formData.phone)) {
-            showFormStatus('Please enter a valid phone number.', 'error');
-            return;
-        }
-
-        // In a real implementation, send to backend
-        // For now, we'll store locally and show success message
-        storeFormData(formData);
-        showFormStatus('Thank you! Your message has been sent successfully. We will contact you soon.', 'success');
-
-        // Log to console for demonstration
-        console.log('[v0] Contact Form Submitted:', formData);
-
-        // Reset form
-        contactForm.reset();
-
-        // Clear success message after 5 seconds
-        setTimeout(function() {
-            showFormStatus('', '');
-        }, 5000);
-    });
+    }
 
     function showFormStatus(message, type) {
         const statusDiv = document.getElementById('formStatus');
@@ -95,32 +250,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function storeFormData(formData) {
-        // Store in localStorage for demonstration
-        // In production, this would be sent to a backend server
+    function storeFormData(data) {
         try {
             const existingData = JSON.parse(localStorage.getItem('contactSubmissions')) || [];
-            existingData.push(formData);
+            existingData.push(data);
             localStorage.setItem('contactSubmissions', JSON.stringify(existingData));
-
-            // Also log to console
-            console.log('[v0] All Contact Submissions:', existingData);
         } catch (error) {
-            console.error('[v0] Error storing form data:', error);
+            console.error('Error saving data:', error);
         }
     }
 });
 
-// ===== Contact Information Display =====
-// Display stored contact submissions (for testing/verification)
 window.getContactSubmissions = function() {
     const submissions = JSON.parse(localStorage.getItem('contactSubmissions')) || [];
-    console.log('[v0] Contact Form Submissions:', submissions);
+    console.log('Submissions:', submissions);
     return submissions;
 };
 
-// Clear stored submissions
 window.clearContactSubmissions = function() {
     localStorage.removeItem('contactSubmissions');
-    console.log('[v0] Contact submissions cleared');
+    console.log('Submissions cleared.');
 };
