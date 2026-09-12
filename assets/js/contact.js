@@ -13,7 +13,7 @@
 // 1. CONFIGURATION: Replace these placeholders with your actual EmailJS Keys
 const EMAILJS_PUBLIC_KEY = "A_hBpRLB_1PngZi6P";  
 const EMAILJS_SERVICE_ID = "service_7v5jyvl";  
-const EMAILJS_TEMPLATE_ID = "template_8n1eahn"; 
+const EMAILJS_TEMPLATE_ID = "template_gkwmu54"; 
 
 // Initialize EmailJS SDK after CDN loads
 function initEmailJS() {
