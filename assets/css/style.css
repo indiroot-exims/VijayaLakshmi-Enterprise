@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 9999; /* Increased to stay above all hero sections */
     background: var(--bg-white);
     border-bottom: 3px solid var(--maroon);
     transition: box-shadow var(--transition);
@@ -112,6 +112,7 @@ img { max-width: 100%; display: block; }
     justify-content: space-between;
     height: 68px;
     gap: 20px;
+    position: relative; /* Establish local stacking context */
 }
 
 .logo-wrap { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
@@ -167,7 +168,7 @@ img { max-width: 100%; display: block; }
     box-shadow: var(--shadow-lg);
     min-width: 240px;
     padding: 6px 0;
-    z-index: 1000;
+    z-index: 10000; /* Ensured top priority over hero layer elements */
 }
 .has-dropdown:hover .dropdown { display: block; }
 .dropdown li a {
