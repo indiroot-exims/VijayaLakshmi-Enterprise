@@ -593,7 +593,7 @@ header,
     gap: 48px; 
 }
 .footer-brand p { 
-    font-size: 18px; 
+    font-size: 16px; 
     color: #c81d0b; 
     opacity: 0.85; 
     line-height: 1.75; 
@@ -610,7 +610,7 @@ header,
 }
 .footer-logo-main {
     font-family: var(--font-head); 
-    font-size: 36px; 
+    font-size: 24px; 
     font-weight: 700;
     color: #c81d0b; 
     text-transform: uppercase; 
@@ -619,7 +619,7 @@ header,
     letter-spacing: 0.5px;
 }
 .footer-logo-sub { 
-    font-size: 28px; 
+    font-size: 22px; 
     color: #c81d0b; 
     text-transform: uppercase; 
     letter-spacing: 1.5px; 
@@ -632,7 +632,7 @@ header,
     flex-wrap: wrap; 
 }
 .badge {
-    font-size: 20px; 
+    font-size: 16px; 
     font-weight: 700; 
     text-transform: uppercase; 
     letter-spacing: 1px;
@@ -657,7 +657,7 @@ header,
     margin-bottom: 10px; 
 }
 .footer-col ul li a { 
-    font-size: 20px; 
+    font-size: 14px; 
     color: #c81d0b; 
     font-weight: 500;
     opacity: 0.85;
@@ -678,7 +678,7 @@ header,
     display: flex; 
     gap: 12px; 
     align-items: flex-start; 
-    font-size: 20px; 
+    font-size: 14px; 
     color: #c81d0b; 
     line-height: 1.6; 
 }
@@ -703,7 +703,7 @@ header,
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    font-size: 18px; 
+    font-size: 16px; 
     color: #c81d0b; 
     font-weight: 500;
 }
