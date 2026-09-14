@@ -258,7 +258,7 @@ header,
             rgba(35, 10, 18, 0.92) 0%,   /* Deep maroon blend over text area */
             rgba(50, 15, 25, 0.75) 100%   /* Lighter tone to show machinery details */
         ), 
-      url('./images/heroimage.png'); /* Insert your image path here */
+     url('../../images/heroimage.png'); /* Insert your image path here */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
