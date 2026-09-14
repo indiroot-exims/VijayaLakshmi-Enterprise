@@ -251,7 +251,17 @@ header,
 ════════════════════════════════════════ */
 .hero {
     position: relative;
-    background: var(--maroon-dark);
+    /* Dark maroon overlay blended directly with the background image */
+    background-image: 
+        linear-gradient(
+            135deg, 
+            rgba(35, 10, 18, 0.92) 0%,   /* Deep maroon blend over text area */
+            rgba(50, 15, 25, 0.75) 100%   /* Lighter tone to show machinery details */
+        ), 
+        url('../images/heroimage.png');      /* Insert your image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 100px 0 90px;
     overflow: hidden;
