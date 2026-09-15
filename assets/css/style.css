@@ -581,7 +581,7 @@ header,
     width: auto;
     max-width: 140px;              /* Increased max-width allowance */
     object-fit: contain;
-    filter: grayscale(100%);
+    
     opacity: 0.8;
     transition: filter 0.3s ease, opacity 0.3s ease;
 }
