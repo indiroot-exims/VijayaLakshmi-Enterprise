@@ -134,14 +134,14 @@ header,
     font-family: var(--font-head);
     font-size: 20px;
     font-weight: 700;
-    color: var(--maroon-dark);
+    color: #c81d0b;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 .logo-sub {
     font-size: 10px;
     font-weight: 600;
-    color: var(--gold-dark);
+    color: #c81d0b;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-top: 1px;
@@ -166,7 +166,7 @@ header,
     padding: 8px 14px;
     font-size: 13.5px;
     font-weight: 600;
-    color: var(--mid-dark);
+    color: #c81d0b;
     letter-spacing: 0.3px;
     text-transform: uppercase;
     border-radius: var(--radius);
