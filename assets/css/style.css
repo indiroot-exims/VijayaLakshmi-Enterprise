@@ -567,9 +567,9 @@ header,
 .client-card {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;                     /* Increased spacing between logo and text */
     background: #fff;
-    padding: 12px 24px;
+    padding: 18px 32px;            /* Increased padding for taller/wider cards */
     border-radius: var(--radius);
     border: 1px solid var(--border);
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -577,13 +577,22 @@ header,
 }
 
 .client-card img {
-    height: 35px;
+    height: 55px;                  /* Increased logo height from 35px to 55px */
     width: auto;
-    max-width: 100px;
+    max-width: 140px;              /* Increased max-width allowance */
     object-fit: contain;
-    filter: grayscale(100%); /* Keeps all client logos uniform */
+    filter: grayscale(100%);
     opacity: 0.8;
     transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.client-card span {
+    font-family: var(--font-head);
+    font-size: 16px;               /* Increased text size to balance larger logos */
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .client-card:hover img {
@@ -591,14 +600,7 @@ header,
     opacity: 1;
 }
 
-.client-card span {
-    font-family: var(--font-head);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--dark);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
+
 
 /* Keyframes for smooth continuous motion */
 @keyframes infiniteScroll {
@@ -675,7 +677,7 @@ header,
    FOOTER
 ════════════════════════════════════════ */
 .footer { 
-    background: #ffffff; 
+    background: #000000; 
     color: #c81d0b; 
     border-top: 3px solid var(--maroon); 
 }
