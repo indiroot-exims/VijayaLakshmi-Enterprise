@@ -513,6 +513,102 @@ header,
 }
 .why-item p { font-size: 13.5px; color: var(--mid); line-height: 1.65; }
 
+
+* ════════════════════════════════════════
+   CLIENT TICKER STYLES
+════════════════════════════════════════ */
+.client-ticker-section {
+    padding: 40px 0;
+    background: #fdfdfd;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+/* Gradient overlays on edges to smooth out entry and exit */
+.ticker-wrapper::before,
+.ticker-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+.ticker-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, #fdfdfd 0%, transparent 100%);
+}
+.ticker-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, #fdfdfd 0%, transparent 100%);
+}
+
+.ticker-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    animation: infiniteScroll 25s linear infinite;
+}
+
+/* Pauses ticker when user hovers */
+.ticker-wrapper:hover .ticker-track {
+    animation-play-state: paused;
+}
+
+.client-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    flex-shrink: 0;
+}
+
+.client-card img {
+    height: 35px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+    filter: grayscale(100%); /* Keeps all client logos uniform */
+    opacity: 0.8;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.client-card:hover img {
+    filter: grayscale(0%); /* Restores original logo colors on hover */
+    opacity: 1;
+}
+
+.client-card span {
+    font-family: var(--font-head);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Keyframes for smooth continuous motion */
+@keyframes infiniteScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 /* ════════════════════════════════════════
    INDUSTRIES (home mini-grid)
 ════════════════════════════════════════ */
