@@ -1226,6 +1226,37 @@ header,
 .industries-cta h2 { font-family: var(--font-head); font-size: clamp(26px, 4vw, 44px); font-weight: 700; text-transform: uppercase; color: #fff; letter-spacing: 0.4px; margin-bottom: 14px; }
 .industries-cta p  { font-size: 16px; color: rgba(255,255,255,0.55); max-width: 540px; margin: 0 auto 36px; line-height: 1.7; }
 
+/* WhatsApp Floating Button Styling */
+.whatsapp-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+}
+
+/* Ensures the SVG icon scales correctly inside the button */
+.whatsapp-btn svg {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+}
 /* ════════════════════════════════════════
    RESPONSIVE
 ════════════════════════════════════════ */
